@@ -2,7 +2,7 @@
 (function () {
   const cards = document.getElementById("cards");
   if (cards) {
-    const items = Array.from(cards.querySelectorAll(".card"));
+    const items = Array.from(cards.querySelectorAll(".paper-card"));
     const chips = Array.from(document.querySelectorAll("[data-filter-theme]"));
     const year = document.getElementById("year");
     const q = document.getElementById("q");
