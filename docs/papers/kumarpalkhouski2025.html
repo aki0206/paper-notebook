@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumar &amp; Palkhouski (2025)｜文獻手帳</title>
+<meta name="description" content="這篇論文建立了 GEO-16——一個有 16 個柱項的網頁品質審計框架，用來預測 B2B SaaS 網頁被 AI 答覆引擎（Brave Summary、Google AIO、Perplexity）引用的機率。結論是：Metadata &amp; Freshness、Semantic HTML、Structu">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-platform:#B7E1D1;}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="paper-page">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:var(--theme-engine)">
+  <header class="card paper-head">
+    <a class="back" href="../index.html#papers">← 回到文獻卡片</a>
+    <div class="head-chips"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="chip chip-plain">2025</span></div>
+    <p class="paper-cite-lg">Kumar &amp; Palkhouski (2025)</p>
+    <h1>GEO-16 框架與 AI 答覆引擎引用行為</h1>
+    <p class="orig-title" lang="en">AI Answer Engine Citation Behavior An Empirical Analysis of the GEO16 Framework</p>
+    <dl class="biblio">
+      <div><dt>作者</dt><dd>Kumar, Palkhouski</dd></div>
+      <div><dt>出處</dt><dd>arXiv preprint / Wrodium Research, September 16, 2025</dd></div>
+      <div><dt>DOI</dt><dd><a href="https://doi.org/10.48550/arXiv.2509.10762">10.48550/arXiv.2509.10762</a></dd></div>
+    </dl>
+    <ul class="tags"><li>#GEO16</li><li>#AIAnswerEngine</li><li>#B2BSaaS</li><li>#CitationBehavior</li><li>#GenerativeSearch</li></ul>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" role="img" aria-label="Kumar &amp; Palkhouski (2025) 的角色"><path d="M92.4,55.6 C92.1,64.9 82.0,80.0 73.2,84.4 C64.4,88.8 49.4,85.1 39.4,81.8 C29.4,78.5 16.6,72.3 13.4,64.6 C10.2,56.9 14.9,43.5 20.2,35.6 C25.4,27.6 35.8,18.2 44.9,17.0 C54.0,15.7 66.9,21.8 74.8,28.2 C82.7,34.6 92.7,46.2 92.4,55.6 Z" fill="#A9D3FF"/><ellipse cx="46.5" cy="52.2" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="64.0" cy="52.2" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+
+<aside class="card summary-card" aria-label="一句話總結">
+  <p class="eyebrow">ONE-LINE SUMMARY</p>
+  <p class="summary-text">這篇論文建立了 <strong>GEO-16</strong>——一個有 16 個柱項的網頁品質審計框架，用來預測 B2B SaaS 網頁被 AI 答覆引擎（Brave Summary、Google AIO、Perplexity）引用的機率。結論是：<strong>Metadata &amp; Freshness、Semantic HTML、Structured Data</strong> 這三項最有預測力；當網頁 GEO 總分 ≥ 0.70 且命中 12 個以上柱項時，跨引擎引用率可達 78%。</p>
+</aside>
+
+<article class="card block paper-body" style="--theme:var(--theme-engine)">
+  <nav class="toc" aria-label="本頁目錄"><a href="#s1">研究問題</a><a href="#s2">研究方法</a><a href="#s3">主要發現</a><a href="#s4">限制與未來方向</a></nav>
+  <div class="prose">
+<h2 id="s1">研究問題</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>提出「<strong>GEO-16</strong>」16 柱網頁品質審計框架，透過跨引擎實證審計，量化網頁端品質訊號對 AI 答覆引擎引用行為的預測力，並找出最佳化說明的營運臨界點與門檻。</p>
+</div>
+<h3>四個核心研究問題（Section 4.1，p. 3–4）</h3>
+<ul>
+<li><strong>訊號探索</strong>：網頁端品質訊號與 AI 引擎引用結果（<span class="math">$Y_e(u)$</span>）之間有什麼關聯？哪些柱項（Pillars）最關鍵？</li>
+<li><strong>引擎對比</strong>：不同 AI 答覆引擎（Brave Summary、Google AIO、Perplexity）在引用網頁的 GEO 品質與偏好上有什麼差異？</li>
+<li><strong>門檻識別</strong>：能不能找出明確的營運臨界點 <span class="math">$(g^*, h^*)$</span>（如 GEO 總分 <span class="math">$G$</span> 與柱項命中數 <span class="math">$H$</span>），以最優化預測跨引擎被引用的機率？</li>
+<li><strong>實務指南</strong>：把研究發現轉化成 B2B SaaS 出版商可操作的網頁優化優先順序。</li>
+</ul>
+<h2 id="s2">研究方法</h2>
+<h3>研究設計</h3>
+<p><strong>跨橫斷面多引擎審計研究</strong>（Cross-sectional, Multi-engine Audit）。（Section 4.1，p. 3）</p>
+<h3>樣本與資料</h3>
+<ul>
+<li>涵蓋 <strong>16 個 B2B SaaS 產業領域</strong>（Cloud 7.5%、Finance 6.9%、Healthcare 6.6%、Marketing 5.8% 等）</li>
+<li>撰寫 <strong>70 個</strong>意圖導向 Prompts（<span class="math">$|P| = 70$</span>），每個領域 1–5 個 Prompt</li>
+<li>從 Brave Summary、Google AIO、Perplexity（<code>sonar-pro</code>）收集到 <strong>1,702 次引用</strong></li>
+<li>經 URL 標準化、去重與重定向解析後，共審計 <strong>1,100 個獨立網址</strong>（<span class="math">$|U| = 1,100$</span>）</li>
+</ul>
+<p>（出處：Section 1、4.2、4.3、5.1，p. 1、4–5）</p>
+<h3>測量工具與 GEO-16 審計</h3>
+<ul>
+<li><strong>GEO-16 審計框架</strong>：16 個柱項，每柱 0–3 四級區間評分（Band Score <span class="math">$b_j \in \{0, 1, 2, 3\}$</span>），16 柱滿分 48 分，歸一化為 GEO 總分 <span class="math">$G(u)$</span></li>
+<li><strong>信度與穩定性</strong>：用 5% 手動抽樣子集計算評分者間信度 Cohen's <span class="math">$\kappa$</span>；滾動 10% 樣本的隔週 Pearson's <span class="math">$r$</span> 評估時間穩定度</li>
+</ul>
+<p>（出處：Section 4.1、4.4，p. 3–4）</p>
+<h3>分析方法</h3>
+<ul>
+<li><strong>皮爾森相關分析</strong>（Pearson correlation <span class="math">$r$</span>）與<strong>排列檢定</strong>（Permutation tests），評估柱項與引用機率的關係</li>
+<li><strong>邏輯斯迴歸</strong>（Logistic Regression），搭配網域叢集標準誤差（Domain-clustered SE），評估 GEO 總分、命中數、引擎、領域對引用勝算比（Odds Ratio, OR）的影響</li>
+<li><strong>Youden's <span class="math">$J$</span> 指數</strong>（<span class="math">$J = \text{TPR} - \text{FPR}$</span>）與 Precision-Recall <span class="math">$F1$</span>，尋找最佳營運門檻 <span class="math">$(g^*, h^*)$</span></li>
+</ul>
+<p>（出處：Section 4.5、5.3、5.4，p. 5–6）</p>
+<h2 id="s3">主要發現</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p><strong>Brave Summary</strong> 採用的網頁 GEO 品質最高，<strong>Perplexity 最低</strong>；<strong>Metadata &amp; Freshness、Semantic HTML、Structured Data</strong> 是最具預測力的品質柱項；當 <span class="math">$G \ge 0.70$</span> 且 <span class="math">$H \ge 12$</span> 時，可達成 <strong>78%</strong> 的跨引擎引用率。</p>
+</div>
+<h3>三大引擎採用的網頁品質存在顯著差異</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">引擎</th>
+<th style="text-align: left;">平均 GEO 得分 <span class="math">$\bar{G}$</span></th>
+<th style="text-align: left;">95% CI</th>
+<th style="text-align: left;">引用率</th>
+<th style="text-align: left;">平均柱項命中數</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Brave Summary</strong>（最高）</td>
+<td style="text-align: left;">0.727（SD 0.142）</td>
+<td style="text-align: left;">[0.701, 0.753]</td>
+<td style="text-align: left;">78%</td>
+<td style="text-align: left;">11.6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Google AIO</strong></td>
+<td style="text-align: left;">0.687（SD 0.158）</td>
+<td style="text-align: left;">[0.658, 0.716]</td>
+<td style="text-align: left;">72%</td>
+<td style="text-align: left;">11.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Perplexity</strong>（最低）</td>
+<td style="text-align: left;">0.300（SD 0.189）</td>
+<td style="text-align: left;">[0.267, 0.333]</td>
+<td style="text-align: left;">45%</td>
+<td style="text-align: left;">4.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>（出處：Section 1、5.2、Table 2，p. 1、5）</p>
+<h3>核心品質訊號：三個最強預測因子</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">柱項</th>
+<th style="text-align: left;">相關係數 <span class="math">$r$</span></th>
+<th style="text-align: left;"><span class="math">$p$</span> 值</th>
+<th style="text-align: left;">95% CI</th>
+<th style="text-align: left;">引用影響提升</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Metadata &amp; Freshness</strong>（最強）</td>
+<td style="text-align: left;">0.68</td>
+<td style="text-align: left;">&lt;0.001</td>
+<td style="text-align: left;">[0.64, 0.72]</td>
+<td style="text-align: left;">+47%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Semantic HTML</strong></td>
+<td style="text-align: left;">0.65</td>
+<td style="text-align: left;">&lt;0.001</td>
+<td style="text-align: left;">[0.61, 0.69]</td>
+<td style="text-align: left;">+42%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Structured Data</strong></td>
+<td style="text-align: left;">0.63</td>
+<td style="text-align: left;">&lt;0.001</td>
+<td style="text-align: left;">[0.59, 0.67]</td>
+<td style="text-align: left;">+39%</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>後續依序為：Evidence &amp; Citations（<span class="math">$r = 0.61$</span>）、Authority &amp; Trust（<span class="math">$r = 0.59$</span>）、Internal Linking（<span class="math">$r = 0.57$</span>），均 <span class="math">$p &lt; 0.001$</span>。</li>
+<li>出處：Section 1、5.3、Table 3，p. 1、5</li>
+</ul>
+<h3>明確的實務營運臨界點（Operating Thresholds）</h3>
+<ul>
+<li>當 GEO 總分 <strong><span class="math">$G \ge 0.70$</span></strong> 時出現顯著拐點：敏感度 0.78、特異度 0.84、Youden's 指數 <span class="math">$J = 0.62$</span></li>
+<li>當柱項命中數 <strong><span class="math">$H \ge 12$</span></strong>（滿分 16）時：敏感度 0.85、特異度 0.79、<span class="math">$J = 0.64$</span></li>
+<li>同時達到 <span class="math">$G \ge 0.70$</span> 且 <span class="math">$H \ge 12$</span> 的網頁，<strong>跨引擎引用率達 78%</strong></li>
+<li>跨引擎被引用的網址（134 個 URLs）品質得分，比只被單一引擎引用的網址高出 <strong>71%</strong></li>
+<li>出處：Section 1、5.4，p. 1、5</li>
+</ul>
+<h3>邏輯斯迴歸分析結果</h3>
+<ul>
+<li>整體模型解釋力極高：Nagelkerke <span class="math">$R^2 = 0.743$</span></li>
+<li><strong>GEO 總分</strong>是強力的引用預測因子：OR = <strong>4.2</strong>（95% CI [3.1, 5.7]）</li>
+<li><strong>柱項命中數 <span class="math">$H$</span></strong>：OR = <strong>1.8</strong>（95% CI [1.4, 2.3]）</li>
+<li><strong>Brave 相對於 Perplexity</strong>：OR = <strong>2.1</strong>（95% CI [1.6, 2.8]）</li>
+<li><strong>Cloud 領域相對於 Marketing 領域</strong>：OR = <strong>1.9</strong>（95% CI [1.3, 2.7]）</li>
+<li>出處：Section 1、5.4，p. 1、6</li>
+</ul>
+<h3>產業領域間的品質差異</h3>
+<ul>
+<li><strong>Cloud（雲端服務）</strong>與 <strong>Insurance（保險）</strong> 領先：Cloud 平均得分 0.729、命中數 11.7；Insurance 得分 0.708、命中數 11.3</li>
+<li><strong>Customer Service（客戶服務）</strong>與 <strong>HR（人力資源）</strong> 落後：得分 0.542、命中數 8.7</li>
+<li>出處：Section 5.5、Figure 2，p. 6–7</li>
+</ul>
+<h2 id="s4">限制與未來方向</h2>
+<h3>作者承認的限制</h3>
+<ol>
+<li>樣本僅涵蓋<strong>英文 B2B SaaS 網頁</strong>，結果可能無法直接推廣到其他語言或消費性（B2C）領域。</li>
+<li>採用<strong>觀察式研究設計</strong>（Observational Design），無法直接驗證網外權威（如 Backlinks、品牌聲譽）與網頁端訊號之間的因果關係（Causal Effects）。</li>
+<li>只採集<strong>單一時間點</strong>的數據，無法捕捉 AI 引擎演算法隨時間演進的動態變化。</li>
+</ol>
+<h3>未來研究方向</h3>
+<ol>
+<li>探索<strong>跨語言</strong>與<strong>多模態</strong>訊號對 AI 引用的影響。</li>
+<li>進行<strong>縱向追蹤研究</strong>與<strong>因果干預實驗</strong>（例如 Schema 消融實驗、參考文獻密度變更）。</li>
+</ol>
+<p>（出處：Section 6，p. 7–8）</p>
+  </div>
+</article>
+
+<section class="card block" aria-labelledby="rel-h">
+  <div class="block-head"><div><p class="eyebrow">READ NEXT</p><h2 id="rel-h">接著讀</h2></div></div>
+  <div class="paper-grid small"><a class="paper-card" href="../papers/aggarwal2024.html" data-theme="engine" data-year="2024" data-search="aggarwal et al. (2024) geo: generative engine optimization geo：生成引擎最佳化 這是 geo（生成引擎最佳化）這個研究領域的創始論文。作者建立了黑箱優化框架與 geo-bench 評測基準，發現「加統計數據、引述名言、引用來源」能讓網頁在 ai 生成回答中的曝光率提升最高 41%，而傳統 seo 的關鍵字堆疊完全沒用；geo 還能讓原本排名低的網站大幅翻身。 geo generativeengineoptimization geobench informationdiscovery" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M86.8,58.2 C85.6,67.8 79.6,82.0 70.5,87.2 C61.4,92.5 41.6,94.1 32.4,89.7 C23.1,85.3 16.3,70.1 14.8,60.8 C13.4,51.6 18.0,41.0 23.6,34.3 C29.2,27.5 39.5,21.0 48.5,20.3 C57.5,19.5 71.2,23.6 77.6,30.0 C83.9,36.3 88.0,48.7 86.8,58.2 Z" fill="#A9D3FF"/><ellipse cx="44.4" cy="51.1" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="64.0" cy="51.1" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Aggarwal et al. (2024)</span>
+  <span class="paper-title">GEO：生成引擎最佳化</span>
+  <span class="paper-summary">這是 GEO（生成引擎最佳化）這個研究領域的創始論文。作者建立了黑箱優化框架與 GEO-bench 評測基準，發現「加統計數…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/chen2025.html" data-theme="engine" data-year="2025" data-search="chen et al. (2025) generative engine optimization: how to dominate ai search generative engine optimization: how to dominate ai search 這是一篇系統端審計研究：比較 ai 搜尋引擎（chatgpt、perplexity、gemini、claude）與 google 在「引用哪些來源」上的差異，發現 ai 搜尋壓倒性偏好第三方權威媒體（earned media），並據此提出 generative engine optimization（geo，生成引擎最佳化） 的實證架構。 geo ai搜尋 生成式ai 品牌可見度" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M75.7,69.1 C69.3,77.4 60.7,90.5 52.0,91.3 C43.2,92.1 29.1,81.3 23.0,73.8 C16.8,66.3 14.0,55.5 15.2,46.2 C16.4,37.0 22.3,21.9 30.2,18.3 C38.1,14.7 52.7,20.8 62.7,24.7 C72.6,28.6 87.9,34.4 90.1,41.8 C92.2,49.2 82.0,60.9 75.7,69.1 Z" fill="#A9D3FF"/><ellipse cx="40.8" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.6" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Chen et al. (2025)</span>
+  <span class="paper-title">Generative Engine Optimization: How to Dominate AI Search</span>
+  <span class="paper-summary">這是一篇系統端審計研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Goog…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/arshad2026.html" data-theme="engine" data-year="2026" data-search="arshad (2026) cited or invisible? a multilingual, multi-platform audit of brand citation in generative search 被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計 這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 ai 搜尋平台（perplexity、gemini、chatgpt、google ai overviews）中的引用率。結論很直接：決定品牌能不能被引用的是「平台」，不是「語言」——平台間差距最高達 10 倍，語言間差距幾乎不顯著。而且就算消費者明確搜尋「正品」，ai 搜尋還是常常推薦二手平台或複刻商家，原廠反而被「隱形」。 generativesearch brandcitation multiplatformaudit multilingualaudit geo" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.4,61.5 C75.4,68.8 68.0,77.7 60.3,80.3 C52.7,82.9 41.4,81.1 32.4,77.1 C23.5,73.0 8.2,64.6 6.5,56.0 C4.8,47.5 14.3,31.9 22.3,25.9 C30.2,19.9 45.0,18.3 54.3,20.0 C63.7,21.7 74.2,29.2 78.2,36.1 C82.3,43.0 81.3,54.1 78.4,61.5 Z" fill="#A9D3FF"/><ellipse cx="47.6" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="61.9" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Arshad (2026)</span>
+  <span class="paper-title">被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計</span>
+  <span class="paper-summary">這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 AI 搜尋平台（Perplexity、Gemini、ChatGPT、G…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/zhuhussain2026.html" data-theme="risk" data-year="2026" data-search="zhu &amp; hussain (2026) commercial poisoning in ai search: economic incentives and vulnerability persistence in retrieval-augmented generation 商業投毒與 ai 搜尋安全 這是一篇系統端安全審計研究：在自建的 rag 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 ai 會不會被帶偏。結果發現只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌，而 constitutional ai 的防禦力遠優於 rlhf。 商業投毒 commercialpoisoning geo rag ai搜尋 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M80.8,62.3 C78.3,70.3 71.0,81.3 62.1,85.0 C53.1,88.7 35.1,89.5 27.2,84.6 C19.3,79.6 15.6,65.2 14.7,55.3 C13.7,45.4 14.6,32.2 21.3,25.0 C28.1,17.9 46.1,10.4 55.4,12.3 C64.7,14.3 72.9,28.4 77.1,36.7 C81.4,45.0 83.3,54.2 80.8,62.3 Z" fill="#FFB5C1"/><ellipse cx="42.8" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="57.2" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Zhu &amp; Hussain (2026)</span>
+  <span class="paper-title">商業投毒與 AI 搜尋安全</span>
+  <span class="paper-summary">這是一篇系統端安全審計研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div>
+  <nav class="pager" aria-label="上一篇與下一篇"><a class="btn btn-ghost" href="chen2025.html">← Chen et al. (2025)</a><a class="btn btn-ghost" href="arshad2026.html">Arshad (2026)<span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

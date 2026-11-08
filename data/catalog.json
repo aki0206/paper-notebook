@@ -1,0 +1,81 @@
+{
+  "site": {
+    "title": "文獻手帳",
+    "subtitle": "研究所讀過的論文，一篇一頁，整理成好讀的精讀筆記。",
+    "author": "aki0206",
+    "repo": "https://github.com/aki0206/paper-notebook"
+  },
+  "publicSections": {
+    "2": "研究問題",
+    "5": "研究方法",
+    "6": "主要發現",
+    "8": "限制與未來方向"
+  },
+  "privateTerms": [
+    "與我研究方向",
+    "候選題目",
+    "你的論文",
+    "你論文",
+    "我的論文",
+    "論文題目",
+    "碩論",
+    "碩士論文",
+    "適合作為",
+    "切入點"
+  ],
+  "themes": [
+    {
+      "id": "engine",
+      "name": "引擎與可見度",
+      "description": "內容怎麼寫、哪些來源會被 AI 搜尋引用。",
+      "color": "#A9D3FF"
+    },
+    {
+      "id": "risk",
+      "name": "操縱與商業化",
+      "description": "當可見度可以被污染、被買賣，平台和信任會怎樣。",
+      "color": "#FFB5C1"
+    },
+    {
+      "id": "consumer",
+      "name": "消費者反應",
+      "description": "消費者怎麼看待、信任、評價 AI 產出與推薦。",
+      "color": "#FFE59A"
+    },
+    {
+      "id": "platform",
+      "name": "平台生態",
+      "description": "生成式 AI 如何改變平台與使用者的貢獻行為。",
+      "color": "#B7E1D1"
+    }
+  ],
+  "papers": [
+    { "id": "aggarwal2024", "note": "Aggarwal2024_GEO創始論文_精讀筆記.md", "zoteroId": 94, "theme": "engine" },
+    {
+      "id": "chen2025",
+      "note": "Chen2025_GEO_精讀筆記.md",
+      "zoteroId": 97,
+      "theme": "engine",
+      "summary": "這是一篇**系統端審計**研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Google 在「引用哪些來源」上的差異，發現 AI 搜尋壓倒性偏好第三方權威媒體（Earned Media），並據此提出 **Generative Engine Optimization（GEO，生成引擎最佳化）** 的實證架構。"
+    },
+    { "id": "kumarpalkhouski2025", "note": "KumarPalkhouski2025_GEO16_精讀筆記.md", "zoteroId": 105, "theme": "engine" },
+    { "id": "arshad2026", "note": "Arshad2026_品牌引用審計_精讀筆記.md", "zoteroId": 108, "theme": "engine" },
+    { "id": "martinez2026", "note": "Martinez2026_GEO關鍵綜述_精讀筆記.md", "zoteroId": 141, "theme": "engine" },
+    { "id": "zhuhussain2026", "note": "ZhuHussain2026_商業投毒_精讀筆記.md", "zoteroId": 51, "theme": "risk" },
+    { "id": "hu2026", "note": "Hu2026_GEMBench_精讀筆記.md", "zoteroId": 114, "theme": "risk" },
+    { "id": "gu2026", "note": "Gu2026_評論操縱與過濾_精讀筆記.md", "zoteroId": 149, "theme": "risk" },
+    {
+      "id": "changpark2026",
+      "note": "ChangPark2026_GAISA信任轉移_精讀筆記.md",
+      "zoteroId": 139,
+      "theme": "consumer",
+      "summary": "這篇**直接測量消費者的心理反應**。用「行為推理理論」和「信任轉移理論」證明：消費者對生成式 AI 購物代理人（GAISA）的採行，走的是理性推理路徑而非直覺捷徑；「情境適切性」是最強的採行動機，「感知複雜性」是最大阻力；信任會沿著 **GAISA → 推薦商品 → 購買意願** 這條鏈一路傳遞下去。"
+    },
+    { "id": "rix2025", "note": "Rix2025_演算法折價_精讀筆記.md", "zoteroId": 159, "theme": "consumer" },
+    { "id": "sikhondze2025", "note": "Sikhondze2025_GAIP揭露效應_精讀筆記.md", "zoteroId": 156, "theme": "consumer" },
+    { "id": "zhang2027", "note": "Zhang2027_隱蔽消費空間_精讀筆記.md", "zoteroId": 132, "theme": "consumer" },
+    { "id": "vu2026", "note": "Vu2026_信任校準與隱私悖論_精讀筆記.md", "zoteroId": 135, "theme": "consumer" },
+    { "id": "jmis2025", "note": "JMIS2025_GenAI平台轉型_精讀筆記.md", "zoteroId": 154, "theme": "platform" },
+    { "id": "shanqiu2026", "note": "ShanQiu2026_GenAI知識貢獻_精讀筆記.md", "zoteroId": 152, "theme": "platform" }
+  ]
+}

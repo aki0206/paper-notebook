@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chen et al. (2025)｜文獻手帳</title>
+<meta name="description" content="這是一篇系統端審計研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Google 在「引用哪些來源」上的差異，發現 AI 搜尋壓倒性偏好第三方權威媒體（Earned Media），並據此提出 Generative Engine Optimization">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-platform:#B7E1D1;}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="paper-page">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:var(--theme-engine)">
+  <header class="card paper-head">
+    <a class="back" href="../index.html#papers">← 回到文獻卡片</a>
+    <div class="head-chips"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="chip chip-plain">2025</span></div>
+    <p class="paper-cite-lg">Chen et al. (2025)</p>
+    <h1>Generative Engine Optimization: How to Dominate AI Search</h1>
+    <p class="orig-title" lang="en">Generative Engine Optimization: How to Dominate AI Search</p>
+    <dl class="biblio">
+      <div><dt>作者</dt><dd>Chen, Wang, Chen, Koudas</dd></div>
+      <div><dt>出處</dt><dd>arXiv 預印本</dd></div>
+      <div><dt>DOI</dt><dd><a href="https://doi.org/10.48550/arXiv.2509.08919">10.48550/arXiv.2509.08919</a></dd></div>
+    </dl>
+    <ul class="tags"><li>#GEO</li><li>#AI搜尋</li><li>#生成式AI</li><li>#品牌可見度</li></ul>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" role="img" aria-label="Chen et al. (2025) 的角色"><path d="M75.7,69.1 C69.3,77.4 60.7,90.5 52.0,91.3 C43.2,92.1 29.1,81.3 23.0,73.8 C16.8,66.3 14.0,55.5 15.2,46.2 C16.4,37.0 22.3,21.9 30.2,18.3 C38.1,14.7 52.7,20.8 62.7,24.7 C72.6,28.6 87.9,34.4 90.1,41.8 C92.2,49.2 82.0,60.9 75.7,69.1 Z" fill="#A9D3FF"/><ellipse cx="40.8" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.6" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+
+<aside class="card summary-card" aria-label="一句話總結">
+  <p class="eyebrow">ONE-LINE SUMMARY</p>
+  <p class="summary-text">這是一篇<strong>系統端審計</strong>研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Google 在「引用哪些來源」上的差異，發現 AI 搜尋壓倒性偏好第三方權威媒體（Earned Media），並據此提出 <strong>Generative Engine Optimization（GEO，生成引擎最佳化）</strong> 的實證架構。</p>
+</aside>
+
+<article class="card block paper-body" style="--theme:var(--theme-engine)">
+  <nav class="toc" aria-label="本頁目錄"><a href="#s1">研究問題</a><a href="#s2">研究方法</a><a href="#s3">主要發現</a><a href="#s4">限制與未來方向</a></nav>
+  <div class="prose">
+<h2 id="s1">研究問題</h2>
+<p><strong>核心目的</strong>：系統性比較 AI 搜尋引擎與傳統 Google 搜尋在以下三方面的差異：</p>
+<ol>
+<li>資訊檢索結果</li>
+<li>來源媒體偏好（Brand / Earned / Social）</li>
+<li>搜尋意圖的影響</li>
+</ol>
+<p>並據此建構品牌在 AI 搜尋時代獲取推薦與可見度的 <strong>GEO 實證架構與策略導圖</strong>。</p>
+<blockquote>
+<p>出處：摘要、第 1.1 節 Report Objective</p>
+</blockquote>
+<h2 id="s2">研究方法</h2>
+<h3>研究設計</h3>
+<p><strong>大規模實證審計 + 控制實驗（Empirical Audit &amp; Controlled Experiments）</strong>，搭配<strong>網路社群次級文本採礦（Reddit Mining）</strong>。
+（第 3.1 節、第 4.1 節）</p>
+<h3>樣本與資料來源</h3>
+<p><strong>Reddit 購物 Prompt 採樣</strong>（第 3.1.1 節）</p>
+<ul>
+<li>8 個 AI 主題 Subreddits（如 ChatGPT、ChatGPTPromptGenius、PromptEngineering）</li>
+<li>熱門與最新帖子各 1,000 篇及留言串（2025 年 8 月）</li>
+<li>萃取出 <strong>12 大通用 AI 查詢類別</strong>與 <strong>14 大購物任務類別</strong></li>
+</ul>
+<p><strong>審計 Prompts 資料集</strong>（第 4.2.1、4.2.3、5.2.6 節）</p>
+<ul>
+<li>1,000 個消費者「排名型」Prompts（10 大產品類別 × 每類 100 個）</li>
+<li>100 個基底 Prompts，翻譯成 5 種語言做跨語言審計</li>
+<li>50 個無品牌的汽水查詢 Prompts</li>
+</ul>
+<p><strong>測試的系統</strong>（第 4.1.2 節）</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>使用模型／API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ChatGPT</td>
+<td>gpt-4o-search-preview</td>
+</tr>
+<tr>
+<td>Perplexity</td>
+<td>sonar-pro</td>
+</tr>
+<tr>
+<td>Claude</td>
+<td>claude-3.5-sonnet</td>
+</tr>
+<tr>
+<td>Gemini</td>
+<td>gemini-2.5-flash</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>Custom Search API</td>
+</tr>
+</tbody>
+</table></div>
+<h3>主要測量構面</h3>
+<ul>
+<li><strong>網域媒體構面</strong>（第 4.1.4 節）：Brand（品牌官網）／Earned（第三方評測、新聞、機構）／Social（Reddit、YouTube、Quora 等 UGC）</li>
+<li><strong>相似度與重複率</strong>（第 4.1.5 節）：Jaccard Overlap Index <span class="math">$\left(\frac{|A \cap B|}{|A \cup B|}\right)$</span> 與 Top-k Coverage</li>
+<li><strong>內容時效性 Freshness</strong>（第 5.2.2 節）：文章平均／中位發布天數；Freshness Score <span class="math">$= \frac{1}{1+\text{age}}$</span></li>
+<li><strong>品牌類型</strong>（第 5.2.6 節、表 1）：Major Brands（如 Coca-Cola、Pepsi）vs. Niche/Indie Brands（如 Jones Soda、Sprecher）</li>
+</ul>
+<h3>分析工具與技術</h3>
+<p>Python API 自動化採集、<code>tldextract</code> 網域提取、GPT-4o 結構化標註與分類、Jaccard 矩陣、Violin Plots 與圓餅圖分佈分析。（第 4.1.3、4.1.4 節）</p>
+<h2 id="s3">主要發現</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p><strong>AI 搜尋大量引用 Earned Media，幾乎不引用 Social；且與 Google 的來源重疊度很低。</strong></p>
+</div>
+<ol>
+<li><strong>AI 搜尋壓倒性偏好 Earned Media</strong><ul>
+<li>在汽車、消費電子等領域，AI 搜尋（尤其 GPT 和 Claude）的 Earned Media 引用比例高達 <strong>70%–93%</strong>，Google 約 <strong>40%–55%</strong>。（第 4.2.1 節、圖 2–3）</li>
+</ul>
+</li>
+<li><strong>AI 幾乎完全排除 Social Media</strong><ul>
+<li>GPT／Claude 在多個類別中，Social 占比近乎 0%；Google 仍保留 <strong>15%–23%</strong> 的社群連結。（第 4.2.1 節、圖 2–3）</li>
+</ul>
+</li>
+<li><strong>Google 與 AI 搜尋的網域重複率極低</strong><ul>
+<li>同一個購物查詢下，Google 前 10 名網域與 AI 引用網域的 Jaccard 重複率通常只有 <strong>0.1–0.3（10%–30%）</strong>。（第 4.2.1 節、圖 1）</li>
+<li>⇒ <strong>傳統 SEO 排名高，不保證會在 AI 搜尋中被引用。</strong></li>
+</ul>
+</li>
+<li><strong>搜尋意圖會改變媒體選擇</strong><ul>
+<li>意圖從 Informational 走向 Transactional 時，AI（如 GPT）引用 Brand 官網的比例上升（Transactional 時 Brand 超過 60%）。</li>
+<li>在 Consideration（產品比較）階段，Earned 媒體幾乎獨占（近 90%）。（第 4.3.1 節、圖 18–20）</li>
+</ul>
+</li>
+<li><strong>明顯的大品牌偏誤（Big Brand Bias）</strong><ul>
+<li>在無品牌提示下（例如「推薦最好喝的汽水」），ChatGPT 與 Perplexity 的推薦高度偏向市場領導品牌：<strong>大品牌 62.2%，小眾／Niche 品牌僅 9.0%</strong>。（第 5.2.6 節、圖 32–37）</li>
+</ul>
+</li>
+<li><strong>跨語言與換句話說的敏感度</strong><ul>
+<li><strong>Claude</strong>：跨語言時網域穩定度高，持續引用英文權威網域。</li>
+<li><strong>GPT</strong>：語言一換，就整批換成當地語言的網域。（第 4.2.3 節、圖 7、10）</li>
+<li><strong>提示詞換句話說</strong>：對「推薦哪些品牌」影響較小，但會改變引用的網域。（第 5.2.9 節）</li>
+</ul>
+</li>
+</ol>
+<h2 id="s4">限制與未來方向</h2>
+<h3>限制</h3>
+<ul>
+<li><strong>時間截點限制</strong>：資料採集於 2025 年 8 月，而 AI 搜尋演算法與 RAG 檢索機制變動很快，結果只是「時間點快照」，需定期重複驗證。</li>
+<li><strong>媒體分類的主觀性</strong>：Brand / Earned / Social 三分法的界線有時模糊（例如專業評測網站 vs. 品牌部落格）。</li>
+<li><strong>黑箱測試限制</strong>：拿不到 AI 搜尋引擎內部的訓練資料、使用者 Query Logs 或 RAG 檢索演算法，因果機制多為外部觀測後的推論。</li>
+</ul>
+<p>（出處：第 7 章）</p>
+<h3>作者建議的延伸方向</h3>
+<ul>
+<li>建立持續、動態追蹤的 GEO 營運系統</li>
+<li>細化媒體構面（區分專業新聞、專業評測、電商平台、用戶評論）</li>
+<li>探討機制的解釋性</li>
+</ul>
+<p>（出處：第 6、7 章）</p>
+  </div>
+</article>
+
+<section class="card block" aria-labelledby="rel-h">
+  <div class="block-head"><div><p class="eyebrow">READ NEXT</p><h2 id="rel-h">接著讀</h2></div></div>
+  <div class="paper-grid small"><a class="paper-card" href="../papers/aggarwal2024.html" data-theme="engine" data-year="2024" data-search="aggarwal et al. (2024) geo: generative engine optimization geo：生成引擎最佳化 這是 geo（生成引擎最佳化）這個研究領域的創始論文。作者建立了黑箱優化框架與 geo-bench 評測基準，發現「加統計數據、引述名言、引用來源」能讓網頁在 ai 生成回答中的曝光率提升最高 41%，而傳統 seo 的關鍵字堆疊完全沒用；geo 還能讓原本排名低的網站大幅翻身。 geo generativeengineoptimization geobench informationdiscovery" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M86.8,58.2 C85.6,67.8 79.6,82.0 70.5,87.2 C61.4,92.5 41.6,94.1 32.4,89.7 C23.1,85.3 16.3,70.1 14.8,60.8 C13.4,51.6 18.0,41.0 23.6,34.3 C29.2,27.5 39.5,21.0 48.5,20.3 C57.5,19.5 71.2,23.6 77.6,30.0 C83.9,36.3 88.0,48.7 86.8,58.2 Z" fill="#A9D3FF"/><ellipse cx="44.4" cy="51.1" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="64.0" cy="51.1" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Aggarwal et al. (2024)</span>
+  <span class="paper-title">GEO：生成引擎最佳化</span>
+  <span class="paper-summary">這是 GEO（生成引擎最佳化）這個研究領域的創始論文。作者建立了黑箱優化框架與 GEO-bench 評測基準，發現「加統計數…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/kumarpalkhouski2025.html" data-theme="engine" data-year="2025" data-search="kumar &amp; palkhouski (2025) ai answer engine citation behavior an empirical analysis of the geo16 framework geo-16 框架與 ai 答覆引擎引用行為 這篇論文建立了 geo-16——一個有 16 個柱項的網頁品質審計框架，用來預測 b2b saas 網頁被 ai 答覆引擎（brave summary、google aio、perplexity）引用的機率。結論是：metadata &amp; freshness、semantic html、structured data 這三項最有預測力；當網頁 geo 總分 ≥ 0.70 且命中 12 個以上柱項時，跨引擎引用率可達 78%。 geo16 aianswerengine b2bsaas citationbehavior generativesearch" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M92.4,55.6 C92.1,64.9 82.0,80.0 73.2,84.4 C64.4,88.8 49.4,85.1 39.4,81.8 C29.4,78.5 16.6,72.3 13.4,64.6 C10.2,56.9 14.9,43.5 20.2,35.6 C25.4,27.6 35.8,18.2 44.9,17.0 C54.0,15.7 66.9,21.8 74.8,28.2 C82.7,34.6 92.7,46.2 92.4,55.6 Z" fill="#A9D3FF"/><ellipse cx="46.5" cy="52.2" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="64.0" cy="52.2" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Kumar &amp; Palkhouski (2025)</span>
+  <span class="paper-title">GEO-16 框架與 AI 答覆引擎引用行為</span>
+  <span class="paper-summary">這篇論文建立了 GEO-16——一個有 16 個柱項的網頁品質審計框架，用來預測 B2B SaaS 網頁被 AI 答覆引擎（…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/arshad2026.html" data-theme="engine" data-year="2026" data-search="arshad (2026) cited or invisible? a multilingual, multi-platform audit of brand citation in generative search 被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計 這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 ai 搜尋平台（perplexity、gemini、chatgpt、google ai overviews）中的引用率。結論很直接：決定品牌能不能被引用的是「平台」，不是「語言」——平台間差距最高達 10 倍，語言間差距幾乎不顯著。而且就算消費者明確搜尋「正品」，ai 搜尋還是常常推薦二手平台或複刻商家，原廠反而被「隱形」。 generativesearch brandcitation multiplatformaudit multilingualaudit geo" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.4,61.5 C75.4,68.8 68.0,77.7 60.3,80.3 C52.7,82.9 41.4,81.1 32.4,77.1 C23.5,73.0 8.2,64.6 6.5,56.0 C4.8,47.5 14.3,31.9 22.3,25.9 C30.2,19.9 45.0,18.3 54.3,20.0 C63.7,21.7 74.2,29.2 78.2,36.1 C82.3,43.0 81.3,54.1 78.4,61.5 Z" fill="#A9D3FF"/><ellipse cx="47.6" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="61.9" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Arshad (2026)</span>
+  <span class="paper-title">被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計</span>
+  <span class="paper-summary">這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 AI 搜尋平台（Perplexity、Gemini、ChatGPT、G…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/martinez2026.html" data-theme="engine" data-year="2026" data-search="martinez (2026) optimizing visibility in generative engines: a critical survey of generative engine optimization (2023-2026) 生成引擎最佳化（geo）關鍵文獻綜述 這是一篇批判性文獻綜述，系統性檢視了 45 篇 geo／rag 論文，提出「多階段因果管線」「可見度向量」「實證階層」三套框架。核心結論很犀利：業界宣稱的「geo 提升 40% 可見度」嚴重誇大，目前學術界幾乎沒有任何強實證證明 geo 能真正改善有機檢索或帶來長期商業轉換；最穩健的槓桿只有「主題相關性」與「上下文位置」。 geo criticalsurvey multistagepipeline visibilityvector evidencehierarchy 文獻綜述" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M82.0,56.8 C81.1,66.6 80.1,82.8 72.1,88.1 C64.1,93.3 43.9,92.6 34.1,88.2 C24.3,83.9 16.3,71.7 13.3,62.0 C10.4,52.4 10.6,37.8 16.3,30.4 C22.0,23.0 37.4,18.0 47.6,17.7 C57.8,17.5 71.9,22.4 77.6,28.9 C83.3,35.4 82.9,46.9 82.0,56.8 Z" fill="#A9D3FF"/><ellipse cx="41.4" cy="52.8" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.5" cy="52.8" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Martinez (2026)</span>
+  <span class="paper-title">生成引擎最佳化（GEO）關鍵文獻綜述</span>
+  <span class="paper-summary">這是一篇批判性文獻綜述，系統性檢視了 45 篇 GEO／RAG 論文，提出「多階段因果管線」「可見度向量」「實證階層」三套框…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div>
+  <nav class="pager" aria-label="上一篇與下一篇"><a class="btn btn-ghost" href="aggarwal2024.html">← Aggarwal et al. (2024)</a><a class="btn btn-ghost" href="kumarpalkhouski2025.html">Kumar &amp; Palkhouski (2025)<span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

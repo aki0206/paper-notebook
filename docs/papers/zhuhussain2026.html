@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zhu &amp; Hussain (2026)｜文獻手帳</title>
+<meta name="description" content="這是一篇系統端安全審計研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶偏。結果發現只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌，而 Constitutional AI 的防禦力遠優於 RLHF。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-platform:#B7E1D1;}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+</head>
+<body class="paper-page">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:var(--theme-risk)">
+  <header class="card paper-head">
+    <a class="back" href="../index.html#papers">← 回到文獻卡片</a>
+    <div class="head-chips"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="chip chip-plain">2026</span></div>
+    <p class="paper-cite-lg">Zhu &amp; Hussain (2026)</p>
+    <h1>商業投毒與 AI 搜尋安全</h1>
+    <p class="orig-title" lang="en">Commercial poisoning in AI search: Economic incentives and vulnerability persistence in retrieval-augmented generation</p>
+    <dl class="biblio">
+      <div><dt>作者</dt><dd>Zhu, Hussain</dd></div>
+      <div><dt>出處</dt><dd>Electronic Commerce Research and Applications</dd></div>
+      <div><dt>DOI</dt><dd><a href="https://doi.org/10.1016/j.elerap.2026.101629">10.1016/j.elerap.2026.101629</a></dd></div>
+    </dl>
+    <ul class="tags"><li>#商業投毒</li><li>#CommercialPoisoning</li><li>#GEO</li><li>#RAG</li><li>#AI搜尋</li><li>#消費者信任</li></ul>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" role="img" aria-label="Zhu &amp; Hussain (2026) 的角色"><path d="M80.8,62.3 C78.3,70.3 71.0,81.3 62.1,85.0 C53.1,88.7 35.1,89.5 27.2,84.6 C19.3,79.6 15.6,65.2 14.7,55.3 C13.7,45.4 14.6,32.2 21.3,25.0 C28.1,17.9 46.1,10.4 55.4,12.3 C64.7,14.3 72.9,28.4 77.1,36.7 C81.4,45.0 83.3,54.2 80.8,62.3 Z" fill="#FFB5C1"/><ellipse cx="42.8" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="57.2" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+
+<aside class="card summary-card" aria-label="一句話總結">
+  <p class="eyebrow">ONE-LINE SUMMARY</p>
+  <p class="summary-text">這是一篇<strong>系統端安全審計</strong>研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶偏。結果發現<strong>只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌</strong>，而 Constitutional AI 的防禦力遠優於 RLHF。</p>
+</aside>
+
+<article class="card block paper-body" style="--theme:var(--theme-risk)">
+  <nav class="toc" aria-label="本頁目錄"><a href="#s1">研究問題</a><a href="#s2">研究方法</a><a href="#s3">主要發現</a><a href="#s4">限制與未來方向</a></nav>
+  <div class="prose">
+<h2 id="s1">研究問題</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>建構並驗證「<strong>商業投毒框架（Commercial Poisoning Framework）</strong>」，從經濟學與資訊病理學的角度，評估主流 AI 搜尋系統在真實商業污染下的脆弱性、對齊機制的防禦力，以及市場演化動態。</p>
+</div>
+<h3>研究問題（RQ1–RQ4）（Section 1，p. 3）</h3>
+<ul>
+<li><strong>RQ1</strong>：在真實 RAG 部署中，商業投毒的<strong>觸發機制</strong>是什麼？</li>
+<li><strong>RQ2</strong>：在經濟型模型（Economy-tier Models）中，商業投毒的<strong>真實效果基準</strong>是多少？</li>
+<li><strong>RQ3</strong>：模型的<strong>對齊哲學</strong>（RLHF vs. Constitutional AI）會不會顯著影響它抵禦事實操縱的能力？</li>
+<li><strong>RQ4</strong>：市場力量如何隨時間塑造 AI 供應商的<strong>安全演化軌跡</strong>？</li>
+</ul>
+<h3>研究目的</h3>
+<ol>
+<li>建立不同污染濃度（0%、1%、5%）下的脆弱性基準。</li>
+<li>比較不同對齊哲學抵禦商業投毒的表現。</li>
+<li>檢驗推論成本（Resource Intensity）與防禦強度的關係。</li>
+<li>用「2024 vs. 2025 年模型」的跨世代對照，分析市場力量對安全演化的影響。</li>
+<li>發展商業投毒框架，結合經濟學分析與資訊病理學理論（Information Pathology Theory），解釋 AI 資訊生態中「漏洞為何持續存在」。</li>
+</ol>
+<p>（出處：Section 1，p. 2–3）</p>
+<h2 id="s2">研究方法</h2>
+<h3>研究設計</h3>
+<p>在自建的 <strong>RAG Sandbox（RAG 沙盒環境）</strong> 中做控制式量化實驗（Controlled Quantitative Experiment）。用 <strong>GPT-4o 當自動評審（Automated Judge）</strong>，再搭配人工雙盲驗證。（Section 4、4.2、Fig. 2，p. 5–6）</p>
+<h3>樣本與資料</h3>
+<p><strong>測試語料庫</strong>（合成的消費品評論，共 1,200 篇）（Section 4.1，p. 5–6）</p>
+<ul>
+<li><strong>乾淨文件</strong>：<span class="math">$n=1000$</span> 篇<ul>
+<li>涵蓋 10 大品類：電子產品、家電、個人護理、健身器材、廚房小工具、辦公用品、戶外裝備、寵物用品、汽車配件、智慧家庭</li>
+<li>情感分布：40% 正向、40% 中立、20% 負向</li>
+</ul>
+</li>
+<li><strong>對抗文件</strong>：<span class="math">$n=200$</span> 篇（Strategy A 100 篇、Strategy B 100 篇）<ul>
+<li>平均每篇提到目標品牌 3.2 次</li>
+<li>每 100 字有 2.1 個說服性語言標記</li>
+<li>87% 含行動呼籲（CTA）</li>
+</ul>
+</li>
+</ul>
+<p><strong>實驗次數</strong></p>
+<ul>
+<li>主要因子實驗：1,800 次（兩個世代各 900 次）</li>
+<li>另有 <strong>180 次 Non-RAG 基線測試</strong>（每家供應商 60 次），用來排除模型本身的固有偏好</li>
+</ul>
+<p><strong>評審校準</strong>（Section 4.4，p. 6、8）</p>
+<ul>
+<li>抽樣 <span class="math">$n=200$</span> 篇回答（占每世代總數的 11.1%），由兩位資訊科學背景的研究者雙盲人工編碼</li>
+<li>人工編碼者間信度：Cohen's <span class="math">$\kappa = 0.82$</span></li>
+<li>人工標籤與 GPT-4o 自動評分的一致性：91.5%，Cohen's <span class="math">$\kappa = 0.84$</span></li>
+</ul>
+<h3>測試模型（皆為經濟型 API 模型）（Table 2，p. 7）</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">世代</th>
+<th style="text-align: left;">Google</th>
+<th style="text-align: left;">OpenAI</th>
+<th style="text-align: left;">Anthropic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>2024 Cohort</strong></td>
+<td style="text-align: left;">gemini-2.0-flash</td>
+<td style="text-align: left;">gpt-4o-mini</td>
+<td style="text-align: left;">claude-3.5-haiku</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2025 Cohort</strong></td>
+<td style="text-align: left;">gemini-2.5-flash（&#36;0.075/1M tokens）</td>
+<td style="text-align: left;">gpt-4.1-mini（&#36;0.60/1M tokens）</td>
+<td style="text-align: left;">claude-4.5-haiku（&#36;1.00/1M tokens）</td>
+</tr>
+</tbody>
+</table></div>
+<h3>檢索與分析</h3>
+<ul>
+<li><strong>向量資料庫與檢索</strong>：ChromaDB + OpenAI <code>text-embedding-3</code>，建立 Dense Passage Retrieval 向量庫。（Section 4.1，p. 5–6）</li>
+<li><strong>統計方法</strong>：卡方檢定（<span class="math">$\chi^2$</span>）、獨立樣本 <span class="math">$t$</span> 檢定、Cochran–Armitage 趨勢檢定、Clustered Standard Errors 邏輯斯迴歸、Exact Binomial Test、Fisher's Exact Test、Point-Biserial Correlation。</li>
+<li><strong>效果量</strong>：連續變數用 Cohen's <span class="math">$d$</span>，比例用 Cohen's <span class="math">$h$</span>。</li>
+<li>出處：Section 5、6.1–6.5，p. 6–8</li>
+</ul>
+<h2 id="s3">主要發現</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>經濟型 RAG 系統對商業投毒<strong>高度敏感</strong>：僅 1% 污染就能引發 50%–100% 的回答偏見。<strong>Constitutional AI 的防禦力比 RLHF 高出 11–16 倍</strong>。而各家供應商跨世代的安全表現是<strong>分歧（Divergence）而非收斂</strong>。</p>
+</div>
+<h3>查詢越具體，操縱越容易成功（H1 支持）</h3>
+<ul>
+<li><strong>Anthropic</strong>：Generic 查詢偏見率 25% → Specific-Factual 75%（3 倍；Cohen's <span class="math">$h = 1.05$</span>, <span class="math">$p &lt; 0.001$</span>）</li>
+<li><strong>OpenAI</strong>：40% → 98%（2.4 倍；Cohen's <span class="math">$h = 1.43$</span>, <span class="math">$p &lt; 0.001$</span>）</li>
+<li><strong>Google</strong>：所有查詢類型都是 100%（天花板效應，Ceiling Effect）</li>
+<li>出處：Section 5.1、Fig. 3，p. 6–7</li>
+</ul>
+<h3>偽評論（證言型）明顯勝過偽共識（統計型）（H2 不支持，方向相反）</h3>
+<ul>
+<li>原本 H2 預測：在特定情境下，統計數據會更有效。<strong>結果完全相反</strong>，證言型全面壓過統計型。</li>
+<li><strong>Anthropic</strong>：Strategy A 偏見率 50%–100%；Strategy B 只有 0%–50%（9 個條件中有 8 個是 0%）</li>
+<li><strong>OpenAI</strong>：Strategy A 為 80%–100%；Strategy B 為 0%–100%</li>
+<li>這<strong>支持敘事運輸理論</strong>：體驗式語言更容易被語意檢索抓到，也更容易被模型採信。</li>
+<li>出處：Section 5.1、Fig. 4，p. 6–7</li>
+</ul>
+<h3>污染濃度有「門檻效應」，之後邊際遞減（H3、H4 支持）</h3>
+<ul>
+<li><strong>0% → 1%：偏見率暴增</strong>（<span class="math">$p &lt; 0.001$</span>）<ul>
+<li>Anthropic：0% → 50%（Cohen's <span class="math">$h = 1.57$</span>）</li>
+<li>OpenAI：0% → 67%（Cohen's <span class="math">$h = 1.91$</span>）</li>
+<li>Google：0% → 100%（Cohen's <span class="math">$h = 3.14$</span>）</li>
+</ul>
+</li>
+<li><strong>1% → 5%：只再增加 0–10 個百分點</strong>（<span class="math">$p &gt; 0.05$</span>）<ul>
+<li>前 10 篇污染文件，每篇帶來 5.0–10.0 個百分點的偏見</li>
+<li>後 40 篇，每篇只帶來 0.0–0.25 個百分點</li>
+<li>攻擊效率<strong>至少下降 27 倍</strong></li>
+</ul>
+</li>
+<li>出處：Section 5.2、5.2.1、Fig. 5，p. 6–8</li>
+</ul>
+<h3>RAG 檢索大幅放大操縱（RAG vs. Non-RAG）</h3>
+<ul>
+<li>沒有 RAG 時，三家模型的偏見率只有 <strong>1.67%–5.00%</strong>。</li>
+<li>加入 1% 的 RAG 污染後，偏見率放大 <strong>20–30 倍</strong>（Cohen's <span class="math">$h = 1.31$</span>–<span class="math">$2.69$</span>, <span class="math">$p &lt; 0.001$</span>）。</li>
+<li>⇒ 偏見來自<strong>檢索污染</strong>，而不是模型本身的偏好。</li>
+<li>出處：Section 5.2.1、Table 4，p. 7</li>
+</ul>
+<h3>Constitutional AI 的防禦明顯優於 RLHF（H5、H6 支持）</h3>
+<ul>
+<li>在 Level 1（明確中立指令）下：<ul>
+<li><strong>RLHF 模型</strong>被繞過（Guardrail Bypass, Y_Implicit）的比例：OpenAI 47.50% ～ Google 66.38%，RLHF 整體為 <strong>56.78%</strong></li>
+<li><strong>Anthropic（Constitutional AI）</strong>：真正中立率 <strong>95.83%</strong>，繞過率僅 4.17%（Cohen's <span class="math">$h = 1.30$</span>, <span class="math">$p &lt; 0.001$</span>）</li>
+<li>防禦成功率提升 <strong>11–16 倍</strong></li>
+</ul>
+</li>
+<li>出處：Section 5.3、Table 5，p. 7–8</li>
+</ul>
+<h3>推論成本與防禦的關係因供應商而異（H7 部分支持）</h3>
+<ul>
+<li><strong>整體</strong>：成功防禦的回答，資源強度也顯著較高（<span class="math">$r_{pb} = 0.45$</span>, <span class="math">$p &lt; 0.001$</span>；<span class="math">$t = 4.91$</span>, Cohen's <span class="math">$d = 0.57$</span>）。</li>
+<li><strong>分開看</strong>：<ul>
+<li><strong>OpenAI</strong>：強正相關，成功防禦的花費是被繞過的 <strong>2.27 倍</strong>（<span class="math">$d = 1.52$</span>）</li>
+<li><strong>Anthropic</strong>：防禦率 95.83%，成本比率 <strong>0.91 倍</strong>（成本中性）</li>
+<li><strong>Google</strong>：成本比率 <strong>0.72 倍</strong>（一律低投入）</li>
+</ul>
+</li>
+<li>⇒ Constitutional AI 能把「安全」與「額外運算成本」脫鉤。</li>
+<li>出處：Section 5.3、6.5、Table 6，p. 7–8</li>
+</ul>
+<h3>跨世代是「分歧」而非「收斂」（H8 支持）</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">供應商</th>
+<th style="text-align: left;">2024 偏見率</th>
+<th style="text-align: left;">2025 偏見率</th>
+<th style="text-align: left;">變化</th>
+<th style="text-align: left;">資源強度變化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Anthropic</td>
+<td style="text-align: left;">82.50%</td>
+<td style="text-align: left;">50.00%</td>
+<td style="text-align: left;">−32.50 pp</td>
+<td style="text-align: left;">−22.9%</td>
+</tr>
+<tr>
+<td style="text-align: left;">OpenAI</td>
+<td style="text-align: left;">85.00%</td>
+<td style="text-align: left;">71.67%</td>
+<td style="text-align: left;">−13.33 pp</td>
+<td style="text-align: left;">+31.4%</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google</td>
+<td style="text-align: left;">99.17%</td>
+<td style="text-align: left;">100.00%</td>
+<td style="text-align: left;">+0.83 pp</td>
+<td style="text-align: left;">−41.5%</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>三家供應商的偏見率差距：<strong>2024 年 16.67 pp → 2025 年 50.00 pp</strong></li>
+<li>出處：Section 5.4、Table 7，p. 7–8</li>
+</ul>
+<h2 id="s4">限制與未來方向</h2>
+<h3>作者承認的限制（Section 7.6，p. 10–11）</h3>
+<ol>
+<li><strong>語料庫規模小</strong>：僅 1,000 篇，適合精確的因果推論，但遠小於真實環境（數十億文件），<strong>可能高估攻擊成功率</strong>。</li>
+<li><strong>情境與領域單一</strong>：只做消費品評論（中等風險），沒涵蓋醫療、金融、法律等高風險領域。</li>
+<li><strong>經濟數據是推估，不是直接測量</strong>：<span class="math">$I_{res}$</span> 由字元數與 API 價格估算，沒有取得供應商內部的研發預算、利潤率或用戶價格彈性。</li>
+<li><strong>世代比較不是真正的縱向追蹤</strong>：2024 與 2025 模型是在同一時間點呼叫 API 測試，屬於跨世代比較，而非跨時間追蹤。</li>
+</ol>
+<h3>作者建議的未來方向</h3>
+<ol>
+<li><strong>放大到生產級語料庫</strong>：檢驗數百萬～數十億文件的資料庫中，門檻效應是否仍成立。附錄的數學推廣模型預測：在 100 萬篇語料下，專一查詢的偏見率仍可維持在 25% 以上。（Section 7.6、Appendix，p. 11–12）</li>
+<li><strong>高風險領域研究</strong>：醫療診斷、財務規劃、法律諮詢中的商業投毒。（Section 7.6，p. 11）</li>
+<li><strong>機制可解釋性研究（Mechanistic Interpretability）</strong>：探討 Constitutional AI 在注意力機制上如何運作，並研究如何把它的優勢轉移到 RLHF 模型。（Section 7.4、7.6，p. 10–11）</li>
+</ol>
+  </div>
+</article>
+
+<section class="card block" aria-labelledby="rel-h">
+  <div class="block-head"><div><p class="eyebrow">READ NEXT</p><h2 id="rel-h">接著讀</h2></div></div>
+  <div class="paper-grid small"><a class="paper-card" href="../papers/hu2026.html" data-theme="risk" data-year="2026" data-search="hu et al. (2026) gem-bench: a benchmark for ad-injected response generation within generative engine marketing gem-bench：生成式引擎行銷廣告植入評測基準 這篇論文建立了全球首個針對「生成式引擎行銷（gem）廣告植入回答」的評測基準 gem-bench，並提出多 agent 框架 ad-llm。結果發現：把廣告硬塞進 system prompt（ad-chat）雖然點擊率略高，但會嚴重破壞事實正確性與消費者信任；而先生成再平滑重寫廣告的 ad-llm，能在維持高點擊率的同時大幅提升信任與滿意度。 gem gembench 廣告植入 generativeenginemarketing llmasjudge 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.9,68.8 C74.9,76.4 63.2,87.6 54.3,88.5 C45.5,89.4 31.8,80.8 25.7,74.2 C19.7,67.5 17.9,57.8 18.2,48.6 C18.5,39.4 20.2,23.9 27.6,19.0 C35.0,14.0 54.3,14.9 62.7,18.9 C71.2,22.9 75.7,34.7 78.4,43.0 C81.0,51.3 82.9,61.2 78.9,68.8 Z" fill="#FFB5C1"/><ellipse cx="35.4" cy="48.0" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="53.4" cy="48.0" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Hu et al. (2026)</span>
+  <span class="paper-title">GEM-Bench：生成式引擎行銷廣告植入評測基準</span>
+  <span class="paper-summary">這篇論文建立了全球首個針對「生成式引擎行銷（GEM）廣告植入回答」的評測基準 GEM-Bench，並提出多 Agent 框架…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/gu2026.html" data-theme="risk" data-year="2026" data-search="gu et al. (2026) review manipulation and filtering on digital platforms. 數位平台上的評論操縱與過濾 在平台過濾機制生效前，不論是「5 星正向操縱評論」或「1 星負向惡意操縱評論」，一週內都會顯著提升 app 銷售排名（5 星 +11.1%、1 星 +9.2%）。負評反而推升排名，原因是消費者能識破假負評並「打折」處理，只剩「數量／曝光效應」；平台過濾最終能修正扭曲，但完整修復需長達 6 個月。 reviewmanipulation digitalplatforms reviewfiltering volumevsvalence consumerawareness bert instrumentalvariables" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M82.0,71.2 C76.8,79.3 64.0,89.1 54.0,90.0 C44.0,91.0 27.9,83.8 22.1,76.8 C16.3,69.9 17.6,56.8 19.4,48.4 C21.3,40.0 25.8,31.5 33.1,26.4 C40.5,21.3 55.1,15.3 63.7,17.8 C72.3,20.3 81.8,32.5 84.8,41.4 C87.9,50.3 87.1,63.1 82.0,71.2 Z" fill="#FFB5C1"/><ellipse cx="42.1" cy="45.1" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.4" cy="45.1" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Gu et al. (2026)</span>
+  <span class="paper-title">數位平台上的評論操縱與過濾</span>
+  <span class="paper-summary">在平台過濾機制生效前，不論是「5 星正向操縱評論」或「1 星負向惡意操縱評論」，一週內都會顯著提升 App 銷售排名（5 星…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div>
+  <nav class="pager" aria-label="上一篇與下一篇"><a class="btn btn-ghost" href="martinez2026.html">← Martinez (2026)</a><a class="btn btn-ghost" href="hu2026.html">Hu et al. (2026)<span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

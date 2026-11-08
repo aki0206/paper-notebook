@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="{{root}}assets/style.css">
+<style>{{theme_css}}</style>
+{{head_extra}}
+</head>
+<body class="{{body_class}}">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="{{root}}index.html" aria-label="{{site_title}} 首頁">
+    {{logo}}
+    <span class="brand-text"><span class="brand-name">{{site_title}}</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    {{nav}}
+  </nav>
+</header>
+<main class="page" id="main">
+{{content}}
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      {{logo}}
+      <p class="brand-name">{{site_title}}</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p>{{foot_nav}}</div>
+      <div><p class="eyebrow">SOURCE</p><a href="{{repo}}">GitHub</a><a href="{{repo}}/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    {{foot_blob}}
+  </div>
+</footer>
+<script src="{{root}}assets/app.js" defer></script>
+</body>
+</html>

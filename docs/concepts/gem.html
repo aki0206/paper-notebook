@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成式引擎行銷｜文獻手帳</title>
+<meta name="description" content="在 AI 生成的回答裡放進廣告，等於把「被 AI 提到」變成可以購買的版位。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-platform:#B7E1D1;}</style>
+
+</head>
+<body class="">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:#FFE59A">
+  <header class="card paper-head">
+    <a class="back" href="index.html">← 所有概念</a>
+    <p class="eyebrow">CONCEPT</p>
+    <h1>生成式引擎行銷</h1>
+    <p class="orig-title" lang="en">Generative Engine Marketing（GEM）</p>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M82.7,67.0 C79.0,74.8 68.1,83.1 57.9,85.9 C47.8,88.7 30.1,89.4 21.8,83.7 C13.6,77.9 7.2,60.8 8.5,51.5 C9.8,42.2 21.4,33.3 29.7,28.0 C38.0,22.7 50.1,17.7 58.5,19.5 C67.0,21.4 76.4,31.0 80.4,38.9 C84.5,46.8 86.5,59.1 82.7,67.0 Z" fill="#FFFFFF"/><ellipse cx="45.6" cy="55.2" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="60.4" cy="55.2" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+<aside class="card summary-card"><p class="eyebrow">IN ONE LINE</p><p class="summary-text">在 AI 生成的回答裡放進廣告，等於把「被 AI 提到」變成可以購買的版位。</p></aside>
+<article class="card block" style="--theme:#FFE59A"><div class="prose"><h2>白話定義</h2>
+<p><a href="geo.html">GEO</a> 是靠把內容寫好來爭取被引用；GEM 則是直接付費，讓品牌或商品出現在 AI 的回答裡。問題在於，廣告放進答案後，使用者還分得出哪些是建議、哪些是推銷嗎？</p>
+<h2>為什麼重要</h2>
+<p>AI 回答讀起來像中立的建議。如果廣告植入得太硬，可能讓答案出錯、讓人覺得 AI 在推銷；植入得太自然，又可能讓使用者分不出廣告。這直接牽動平台收益與使用者信任。</p>
+<h2>文獻怎麼說</h2>
+<ul>
+<li><strong>怎麼植入差很多：</strong> <a href="../papers/hu2026.html">Hu et al. (2026)</a> 建立 GEM-Bench 評測基準，比較兩種做法。把廣告指令直接寫進系統提示（Ad-Chat）點擊率略高約 6.5%，但會讓 AI 像推銷員，甚至推薦當地沒有營運的巴士路線；先生成答案再改寫植入（Ad-LLM），信任度最高提升 62.9%。</li>
+<li><strong>越過界就是投毒：</strong> <a href="../papers/zhuhussain2026.html">Zhu &amp; Hussain (2026)</a> 示範如果把商業內容偽裝成評論或共識混進檢索資料，只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌。</li>
+<li><strong>類似的老問題：</strong> <a href="../papers/gu2026.html">Gu, Cao &amp; Fang (2026)</a> 研究 App Store 的評論操縱，發現平台過濾能修正扭曲，但完整修復要長達 6 個月，可以作為 AI 回答被操縱時的參照。</li>
+</ul></div></article>
+<section class="card block"><div class="block-head"><div><p class="eyebrow">PAPERS</p><h2>出現在這些論文</h2></div></div><div class="paper-grid small"><a class="paper-card" href="../papers/hu2026.html" data-theme="risk" data-year="2026" data-search="hu et al. (2026) gem-bench: a benchmark for ad-injected response generation within generative engine marketing gem-bench：生成式引擎行銷廣告植入評測基準 這篇論文建立了全球首個針對「生成式引擎行銷（gem）廣告植入回答」的評測基準 gem-bench，並提出多 agent 框架 ad-llm。結果發現：把廣告硬塞進 system prompt（ad-chat）雖然點擊率略高，但會嚴重破壞事實正確性與消費者信任；而先生成再平滑重寫廣告的 ad-llm，能在維持高點擊率的同時大幅提升信任與滿意度。 gem gembench 廣告植入 generativeenginemarketing llmasjudge 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.9,68.8 C74.9,76.4 63.2,87.6 54.3,88.5 C45.5,89.4 31.8,80.8 25.7,74.2 C19.7,67.5 17.9,57.8 18.2,48.6 C18.5,39.4 20.2,23.9 27.6,19.0 C35.0,14.0 54.3,14.9 62.7,18.9 C71.2,22.9 75.7,34.7 78.4,43.0 C81.0,51.3 82.9,61.2 78.9,68.8 Z" fill="#FFB5C1"/><ellipse cx="35.4" cy="48.0" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="53.4" cy="48.0" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Hu et al. (2026)</span>
+  <span class="paper-title">GEM-Bench：生成式引擎行銷廣告植入評測基準</span>
+  <span class="paper-summary">這篇論文建立了全球首個針對「生成式引擎行銷（GEM）廣告植入回答」的評測基準 GEM-Bench，並提出多 Agent 框架…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/zhuhussain2026.html" data-theme="risk" data-year="2026" data-search="zhu &amp; hussain (2026) commercial poisoning in ai search: economic incentives and vulnerability persistence in retrieval-augmented generation 商業投毒與 ai 搜尋安全 這是一篇系統端安全審計研究：在自建的 rag 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 ai 會不會被帶偏。結果發現只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌，而 constitutional ai 的防禦力遠優於 rlhf。 商業投毒 commercialpoisoning geo rag ai搜尋 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M80.8,62.3 C78.3,70.3 71.0,81.3 62.1,85.0 C53.1,88.7 35.1,89.5 27.2,84.6 C19.3,79.6 15.6,65.2 14.7,55.3 C13.7,45.4 14.6,32.2 21.3,25.0 C28.1,17.9 46.1,10.4 55.4,12.3 C64.7,14.3 72.9,28.4 77.1,36.7 C81.4,45.0 83.3,54.2 80.8,62.3 Z" fill="#FFB5C1"/><ellipse cx="42.8" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="57.2" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Zhu &amp; Hussain (2026)</span>
+  <span class="paper-title">商業投毒與 AI 搜尋安全</span>
+  <span class="paper-summary">這是一篇系統端安全審計研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/gu2026.html" data-theme="risk" data-year="2026" data-search="gu et al. (2026) review manipulation and filtering on digital platforms. 數位平台上的評論操縱與過濾 在平台過濾機制生效前，不論是「5 星正向操縱評論」或「1 星負向惡意操縱評論」，一週內都會顯著提升 app 銷售排名（5 星 +11.1%、1 星 +9.2%）。負評反而推升排名，原因是消費者能識破假負評並「打折」處理，只剩「數量／曝光效應」；平台過濾最終能修正扭曲，但完整修復需長達 6 個月。 reviewmanipulation digitalplatforms reviewfiltering volumevsvalence consumerawareness bert instrumentalvariables" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M82.0,71.2 C76.8,79.3 64.0,89.1 54.0,90.0 C44.0,91.0 27.9,83.8 22.1,76.8 C16.3,69.9 17.6,56.8 19.4,48.4 C21.3,40.0 25.8,31.5 33.1,26.4 C40.5,21.3 55.1,15.3 63.7,17.8 C72.3,20.3 81.8,32.5 84.8,41.4 C87.9,50.3 87.1,63.1 82.0,71.2 Z" fill="#FFB5C1"/><ellipse cx="42.1" cy="45.1" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.4" cy="45.1" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Gu et al. (2026)</span>
+  <span class="paper-title">數位平台上的評論操縱與過濾</span>
+  <span class="paper-summary">在平台過濾機制生效前，不論是「5 星正向操縱評論」或「1 星負向惡意操縱評論」，一週內都會顯著提升 App 銷售排名（5 星…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div></section>
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

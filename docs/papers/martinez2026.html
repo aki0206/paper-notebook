@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Martinez (2026)｜文獻手帳</title>
+<meta name="description" content="這是一篇批判性文獻綜述，系統性檢視了 45 篇 GEO／RAG 論文，提出「多階段因果管線」「可見度向量」「實證階層」三套框架。核心結論很犀利：業界宣稱的「GEO 提升 40% 可見度」嚴重誇大，目前學術界幾乎沒有任何強實證證明 GEO 能真正改善有機檢索或帶來長期商業轉換；最穩健的槓桿只有「主題相">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-platform:#B7E1D1;}</style>
+
+</head>
+<body class="paper-page">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:var(--theme-engine)">
+  <header class="card paper-head">
+    <a class="back" href="../index.html#papers">← 回到文獻卡片</a>
+    <div class="head-chips"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="chip chip-plain">2026</span></div>
+    <p class="paper-cite-lg">Martinez (2026)</p>
+    <h1>生成引擎最佳化（GEO）關鍵文獻綜述</h1>
+    <p class="orig-title" lang="en">Optimizing Visibility in Generative Engines: A Critical Survey of Generative Engine Optimization (2023-2026)</p>
+    <dl class="biblio">
+      <div><dt>作者</dt><dd>Martinez</dd></div>
+      <div><dt>出處</dt><dd>arXiv 預印本</dd></div>
+      <div><dt>DOI</dt><dd><a href="https://doi.org/10.48550/arXiv.2607.14035">10.48550/arXiv.2607.14035</a></dd></div>
+    </dl>
+    <ul class="tags"><li>#GEO</li><li>#CriticalSurvey</li><li>#MultistagePipeline</li><li>#VisibilityVector</li><li>#EvidenceHierarchy</li><li>#文獻綜述</li></ul>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" role="img" aria-label="Martinez (2026) 的角色"><path d="M82.0,56.8 C81.1,66.6 80.1,82.8 72.1,88.1 C64.1,93.3 43.9,92.6 34.1,88.2 C24.3,83.9 16.3,71.7 13.3,62.0 C10.4,52.4 10.6,37.8 16.3,30.4 C22.0,23.0 37.4,18.0 47.6,17.7 C57.8,17.5 71.9,22.4 77.6,28.9 C83.3,35.4 82.9,46.9 82.0,56.8 Z" fill="#A9D3FF"/><ellipse cx="41.4" cy="52.8" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.5" cy="52.8" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+
+<aside class="card summary-card" aria-label="一句話總結">
+  <p class="eyebrow">ONE-LINE SUMMARY</p>
+  <p class="summary-text">這是一篇<strong>批判性文獻綜述</strong>，系統性檢視了 45 篇 GEO／RAG 論文，提出「多階段因果管線」「可見度向量」「實證階層」三套框架。核心結論很犀利：<strong>業界宣稱的「GEO 提升 40% 可見度」嚴重誇大</strong>，目前學術界幾乎沒有任何強實證證明 GEO 能真正改善有機檢索或帶來長期商業轉換；最穩健的槓桿只有「主題相關性」與「上下文位置」。</p>
+</aside>
+
+<article class="card block paper-body" style="--theme:var(--theme-engine)">
+  <nav class="toc" aria-label="本頁目錄"><a href="#s1">研究問題</a><a href="#s2">研究方法</a><a href="#s3">主要發現</a><a href="#s4">限制與未來方向</a></nav>
+  <div class="prose">
+<h2 id="s1">研究問題</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>對 2023–2026 年間 45 篇 GEO 及相關 RAG／評測文獻做系統性批判審視，建立 GEO 的多階段因果管線模型、可見度向量與實證階層，釐清哪些 GEO 技術真的有可複現的效力。</p>
+</div>
+<h3>四大核心論文主張（Propositions）（Section 1，p. 2）</h3>
+<ol>
+<li><strong>GEO 是多階段管線</strong>：有機可檢索性、上下文排名、引用、顯著性、事實吸收、流量，是不同階段的獨立變數——優化某個階段可能反而損害另一個階段。</li>
+<li><strong>可見度是動態分佈</strong>：它會隨引擎、日期、地點、Prompt 換句話說、搜尋觸發狀態與生成隨機性變動，單點測量不代表穩定指標。</li>
+<li><strong>現有實證高度受限於檢索後條件</strong>：實驗只證實「已放入上下文的文件」可以被改寫操縱，但幾乎沒證實能提升「有機檢索」，更完全沒證實能帶來持久的商業轉換。</li>
+<li><strong>優化與操縱共享同一管道</strong>：有益的內容重寫、對抗性序列、間接 Prompt 注入，本質上都是在修改模型消耗的文本，規範邊界應該建立在真誠性與透明度上。</li>
+</ol>
+<h2 id="s2">研究方法</h2>
+<h3>研究設計</h3>
+<p><strong>批判性範疇綜述</strong>（Critical Scoping Review）與<strong>文獻計量審計</strong>。（Section 2.1）</p>
+<h3>樣本來源與篩選</h3>
+<ul>
+<li>涵蓋 <strong>2023 年 11 月 16 日至 2026 年 7 月 14 日</strong>間發布或接受的 <strong>45 篇核心研究</strong></li>
+<li>檢索來源：arXiv、ACM Digital Library、ACL Anthology、NeurIPS、PMLR、OpenReview 等</li>
+<li><strong>篩選標準</strong>：論文須符合以下至少一項——定義／評估 GEO 干擾技術、測量商業引擎可見度／穩定性／忠實度、研究攻擊／防禦機制、或建構 GEO 經濟與外在性模型</li>
+</ul>
+<p>（出處：Abstract、Section 2.1、2.2）</p>
+<h3>分析與編碼方法</h3>
+<ul>
+<li>對 45 篇文獻做結構化編碼：出版狀態（Peer-reviewed / Forthcoming / Preprint）、管線階段、系統類型（Controlled vs. Commercial）、測量單位、核心發現、效度威脅</li>
+<li>提出<strong>可複現 GEO 測量協定（Minimum Protocol）</strong>：強調以 Prompt 為群集的階層模型（Hierarchical Models with Clustering），要求多次重複（7–8 次）、換句話說（Paraphrases）、時間縱向監測</li>
+</ul>
+<p>（出處：Section 2.2；Appendix B, Table 8；Section 6.2、11.2、11.3）</p>
+<h2 id="s3">主要發現</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p><strong>主題相關性與上下文位置</strong>是最穩健的兩大槓桿；<strong>通用啟發式策略泛化不良</strong>，甚至可能損害檢索；商業引擎間來源重複率極低且高度不穩定；目前學術界<strong>完全缺乏強實證</strong>證明 GEO 能長期改善有機可檢索性或帶來真實商業轉換。</p>
+</div>
+<h3>主題相關性與上下文位置是最穩健的兩大槓桿</h3>
+<ul>
+<li>提高網頁在上下文中的位置（Context Position）對引用的影響，超越絕大多數文本改寫技術。</li>
+<li>Vishwakarma et al. (2026) 在 <strong>252,000 次試驗</strong>中證實：相關性與位置是決定首次引用的主導因素。</li>
+<li>出處：Section 7.1；Table 4、5</li>
+</ul>
+<h3>通用啟發式策略普遍泛化不良，甚至損害檢索</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">研究</th>
+<th style="text-align: left;">發現</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>C-SEO Bench</strong>（16,360 篇文件）</td>
+<td style="text-align: left;">54 種方法－領域組合中，只有 <strong>3 種</strong>呈顯著正向；QA 任務中<strong>完全沒有</strong>顯著正向</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>E-GEO</strong>（電商）</td>
+<td style="text-align: left;">15 個初始啟發式中，<strong>10 個</strong>是中性或負向</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SAGEO Arena</strong>（完整管線測試）</td>
+<td style="text-align: left;">僅對內文（Body-only）做 GEO 重寫，會讓網頁 Top-20 出現率下降約 <strong>9%</strong>，重排序後 Top-10 下降 <strong>16%</strong>，最終引用下降 <strong>6%</strong></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>⇒ 在檢索後有效的改寫，可能在檢索上游產生負面干擾。</li>
+<li>出處：Section 7.3、7.4；Table 1、5</li>
+</ul>
+<h3>商業引擎間來源重複度極低</h3>
+<ul>
+<li>Grossman et al. (2026)：在 11,500 個查詢中，Google 有機 SERP、AI Overviews（AIO）與 Gemini 之間的 URL 層級 Jaccard 重複率只有 <strong>0.11–0.18</strong>。</li>
+<li>Kirsten et al. (2026)：<strong>53%</strong> 被 Google AIO 引用的網域根本不在 Google 有機 SERP 前 10 名，<strong>27%</strong> 不在前 100 名。</li>
+<li>出處：Section 8.1；Table 5</li>
+</ul>
+<h3>生成結果具備高動態不穩定性</h3>
+<ul>
+<li>Kirsten et al. (2026) 觀察跨 2 個月：AIO 頁面重複率只有 <strong>18%</strong>；即使控制 Temperature=0，重複運行仍有 <strong>9%–28%</strong> 的決策會改變。</li>
+<li>出處：Section 6.2</li>
+</ul>
+<h3>認知（Recognition）與發現（Discovery）之間有巨大鴻溝</h3>
+<ul>
+<li>Sharma (2026) 測試 112 家新創公司：ChatGPT 在<strong>直接點名</strong>時能識別 <strong>99.4%</strong> 的產品，但在<strong>通用類別購物查詢</strong>中只能推薦 <strong>3.32%</strong>（Perplexity 從 94.3% 驟降至 8.29%）。</li>
+<li>出處：Section 8.4</li>
+</ul>
+<h3>流量與轉換的實證證據極度脆弱（整篇綜述實證最弱的一環）</h3>
+<div class="callout callout-warning">
+<p class="callout-title">關鍵結論</p>
+<p>目前文獻中<strong>沒有任何一項 GEO 技術被證明能對有機可檢索性或下游流量與轉換，產生長期、跨平台的穩定因果效應</strong>。商業宣稱嚴重超越了學術實證。</p>
+</div>
+<ul>
+<li>出處：Abstract、Section 8.5、10；Table 5</li>
+</ul>
+<h2 id="s4">限制與未來方向</h2>
+<h3>作者承認的限制</h3>
+<ul>
+<li>綜述涵蓋 45 篇論文，<strong>部分未經 Peer-review</strong>（Preprints）</li>
+<li>任務異質性高，導致無法做定量 Meta-analysis</li>
+<li>商業 AI 系統持續更新，資料只能是快照</li>
+</ul>
+<p>（出處：Section 2.1、2.3、2.4）</p>
+<h3>未來研究方向（Section 13）</h3>
+<ol>
+<li><strong>連結爬取、索引與生成的全管線測試</strong>：擴展到商業系統的真實爬取與檢索驗證。</li>
+<li><strong>因果測量「事實吸收度」與真實人類注意力</strong>：結合眼動儀、點擊與轉換數據，評估引用的真實心理與經濟價值。</li>
+<li><strong>多角色競爭平衡模型</strong>：研究當 100% 的市場參與者都做 GEO 時的博弈結果。</li>
+</ol>
+  </div>
+</article>
+
+<section class="card block" aria-labelledby="rel-h">
+  <div class="block-head"><div><p class="eyebrow">READ NEXT</p><h2 id="rel-h">接著讀</h2></div></div>
+  <div class="paper-grid small"><a class="paper-card" href="../papers/aggarwal2024.html" data-theme="engine" data-year="2024" data-search="aggarwal et al. (2024) geo: generative engine optimization geo：生成引擎最佳化 這是 geo（生成引擎最佳化）這個研究領域的創始論文。作者建立了黑箱優化框架與 geo-bench 評測基準，發現「加統計數據、引述名言、引用來源」能讓網頁在 ai 生成回答中的曝光率提升最高 41%，而傳統 seo 的關鍵字堆疊完全沒用；geo 還能讓原本排名低的網站大幅翻身。 geo generativeengineoptimization geobench informationdiscovery" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M86.8,58.2 C85.6,67.8 79.6,82.0 70.5,87.2 C61.4,92.5 41.6,94.1 32.4,89.7 C23.1,85.3 16.3,70.1 14.8,60.8 C13.4,51.6 18.0,41.0 23.6,34.3 C29.2,27.5 39.5,21.0 48.5,20.3 C57.5,19.5 71.2,23.6 77.6,30.0 C83.9,36.3 88.0,48.7 86.8,58.2 Z" fill="#A9D3FF"/><ellipse cx="44.4" cy="51.1" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="64.0" cy="51.1" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Aggarwal et al. (2024)</span>
+  <span class="paper-title">GEO：生成引擎最佳化</span>
+  <span class="paper-summary">這是 GEO（生成引擎最佳化）這個研究領域的創始論文。作者建立了黑箱優化框架與 GEO-bench 評測基準，發現「加統計數…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/chen2025.html" data-theme="engine" data-year="2025" data-search="chen et al. (2025) generative engine optimization: how to dominate ai search generative engine optimization: how to dominate ai search 這是一篇系統端審計研究：比較 ai 搜尋引擎（chatgpt、perplexity、gemini、claude）與 google 在「引用哪些來源」上的差異，發現 ai 搜尋壓倒性偏好第三方權威媒體（earned media），並據此提出 generative engine optimization（geo，生成引擎最佳化） 的實證架構。 geo ai搜尋 生成式ai 品牌可見度" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M75.7,69.1 C69.3,77.4 60.7,90.5 52.0,91.3 C43.2,92.1 29.1,81.3 23.0,73.8 C16.8,66.3 14.0,55.5 15.2,46.2 C16.4,37.0 22.3,21.9 30.2,18.3 C38.1,14.7 52.7,20.8 62.7,24.7 C72.6,28.6 87.9,34.4 90.1,41.8 C92.2,49.2 82.0,60.9 75.7,69.1 Z" fill="#A9D3FF"/><ellipse cx="40.8" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.6" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Chen et al. (2025)</span>
+  <span class="paper-title">Generative Engine Optimization: How to Dominate AI Search</span>
+  <span class="paper-summary">這是一篇系統端審計研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Goog…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/kumarpalkhouski2025.html" data-theme="engine" data-year="2025" data-search="kumar &amp; palkhouski (2025) ai answer engine citation behavior an empirical analysis of the geo16 framework geo-16 框架與 ai 答覆引擎引用行為 這篇論文建立了 geo-16——一個有 16 個柱項的網頁品質審計框架，用來預測 b2b saas 網頁被 ai 答覆引擎（brave summary、google aio、perplexity）引用的機率。結論是：metadata &amp; freshness、semantic html、structured data 這三項最有預測力；當網頁 geo 總分 ≥ 0.70 且命中 12 個以上柱項時，跨引擎引用率可達 78%。 geo16 aianswerengine b2bsaas citationbehavior generativesearch" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M92.4,55.6 C92.1,64.9 82.0,80.0 73.2,84.4 C64.4,88.8 49.4,85.1 39.4,81.8 C29.4,78.5 16.6,72.3 13.4,64.6 C10.2,56.9 14.9,43.5 20.2,35.6 C25.4,27.6 35.8,18.2 44.9,17.0 C54.0,15.7 66.9,21.8 74.8,28.2 C82.7,34.6 92.7,46.2 92.4,55.6 Z" fill="#A9D3FF"/><ellipse cx="46.5" cy="52.2" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="64.0" cy="52.2" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Kumar &amp; Palkhouski (2025)</span>
+  <span class="paper-title">GEO-16 框架與 AI 答覆引擎引用行為</span>
+  <span class="paper-summary">這篇論文建立了 GEO-16——一個有 16 個柱項的網頁品質審計框架，用來預測 B2B SaaS 網頁被 AI 答覆引擎（…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/arshad2026.html" data-theme="engine" data-year="2026" data-search="arshad (2026) cited or invisible? a multilingual, multi-platform audit of brand citation in generative search 被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計 這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 ai 搜尋平台（perplexity、gemini、chatgpt、google ai overviews）中的引用率。結論很直接：決定品牌能不能被引用的是「平台」，不是「語言」——平台間差距最高達 10 倍，語言間差距幾乎不顯著。而且就算消費者明確搜尋「正品」，ai 搜尋還是常常推薦二手平台或複刻商家，原廠反而被「隱形」。 generativesearch brandcitation multiplatformaudit multilingualaudit geo" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.4,61.5 C75.4,68.8 68.0,77.7 60.3,80.3 C52.7,82.9 41.4,81.1 32.4,77.1 C23.5,73.0 8.2,64.6 6.5,56.0 C4.8,47.5 14.3,31.9 22.3,25.9 C30.2,19.9 45.0,18.3 54.3,20.0 C63.7,21.7 74.2,29.2 78.2,36.1 C82.3,43.0 81.3,54.1 78.4,61.5 Z" fill="#A9D3FF"/><ellipse cx="47.6" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="61.9" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Arshad (2026)</span>
+  <span class="paper-title">被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計</span>
+  <span class="paper-summary">這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 AI 搜尋平台（Perplexity、Gemini、ChatGPT、G…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div>
+  <nav class="pager" aria-label="上一篇與下一篇"><a class="btn btn-ghost" href="arshad2026.html">← Arshad (2026)</a><a class="btn btn-ghost" href="zhuhussain2026.html">Zhu &amp; Hussain (2026)<span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文獻對照表｜文獻手帳</title>
+<meta name="description" content="研究所讀過的論文，一篇一頁，整理成好讀的精讀筆記。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-platform:#B7E1D1;}</style>
+
+</head>
+<body class="">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="index.html">文獻</a>
+    <a href="compare.html" aria-current="page">對照表</a>
+    <a href="concepts/index.html">概念</a>
+    <a href="about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<section class="card page-head">
+  <p class="eyebrow">COMPARE</p>
+  <h1>文獻對照表</h1>
+  <p class="lead">依研究視角分成 4 組，一眼看出每篇論文在研究脈絡裡的位置。</p>
+</section>
+
+<section class="card block compare-block" id="t-engine" style="--theme:var(--theme-engine)">
+  <div class="block-head"><div><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><p class="theme-line">內容怎麼寫、哪些來源會被 AI 搜尋引用。</p></div>
+  <svg class="compare-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M93.2,62.0 C91.3,69.9 74.8,77.1 64.4,81.2 C54.0,85.4 39.3,90.7 30.6,87.0 C21.9,83.3 13.1,68.0 12.2,59.1 C11.4,50.1 19.1,39.5 25.5,33.1 C31.9,26.8 42.4,20.9 50.8,21.0 C59.2,21.1 68.7,27.2 75.7,34.0 C82.8,40.9 95.1,54.2 93.2,62.0 Z" fill="#A9D3FF"/><ellipse cx="45.6" cy="46.6" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="65.4" cy="46.6" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+  <div class="table-scroll"><table class="compare">
+    <thead><tr><th scope="col">論文</th><th scope="col">主題</th><th scope="col">出處</th><th scope="col">一句話總結</th></tr></thead>
+    <tbody><tr><td><a href="papers/aggarwal2024.html">Aggarwal et al. (2024)</a></td><td>GEO：生成引擎最佳化</td><td>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td><td>這是 <strong>GEO（生成引擎最佳化）這個研究領域的創始論文</strong>。作者建立了黑箱優化框架與 <strong>GEO-bench</strong> 評測基準，發現「加統計數據、引述名言、引用來源」能讓網頁在 AI 生成回答中的曝光率提升最高 41%，而傳統 SEO 的關鍵字堆疊完全沒用；GEO 還能讓原本排名低的網站大幅翻身。</td></tr><tr><td><a href="papers/chen2025.html">Chen et al. (2025)</a></td><td>Generative Engine Optimization: How to Dominate AI Search</td><td>arXiv 預印本</td><td>這是一篇<strong>系統端審計</strong>研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Google 在「引用哪些來源」上的差異，發現 AI 搜尋壓倒性偏好第三方權威媒體（Earned Media），並據此提出 <strong>Generative Engine Optimization（GEO，生成引擎最佳化）</strong> 的實證架構。</td></tr><tr><td><a href="papers/kumarpalkhouski2025.html">Kumar &amp; Palkhouski (2025)</a></td><td>GEO-16 框架與 AI 答覆引擎引用行為</td><td>arXiv preprint / Wrodium Research, September 16, 2025</td><td>這篇論文建立了 <strong>GEO-16</strong>——一個有 16 個柱項的網頁品質審計框架，用來預測 B2B SaaS 網頁被 AI 答覆引擎（Brave Summary、Google AIO、Perplexity）引用的機率。結論是：<strong>Metadata &amp; Freshness、Semantic HTML、Structured Data</strong> 這三項最有預測力；當網頁 GEO 總分 ≥ 0.70 且命中 12 個以上柱項時，跨引擎引用率可達 78%。</td></tr><tr><td><a href="papers/arshad2026.html">Arshad (2026)</a></td><td>被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計</td><td>Zenodo 預印本</td><td>這是一篇<strong>跨平台、跨語言的外部審計</strong>研究，測試品牌在四大 AI 搜尋平台（Perplexity、Gemini、ChatGPT、Google AI Overviews）中的引用率。結論很直接：<strong>決定品牌能不能被引用的是「平台」，不是「語言」</strong>——平台間差距最高達 10 倍，語言間差距幾乎不顯著。而且就算消費者明確搜尋「正品」，AI 搜尋還是常常推薦二手平台或複刻商家，原廠反而被「隱形」。</td></tr><tr><td><a href="papers/martinez2026.html">Martinez (2026)</a></td><td>生成引擎最佳化（GEO）關鍵文獻綜述</td><td>arXiv 預印本</td><td>這是一篇<strong>批判性文獻綜述</strong>，系統性檢視了 45 篇 GEO／RAG 論文，提出「多階段因果管線」「可見度向量」「實證階層」三套框架。核心結論很犀利：<strong>業界宣稱的「GEO 提升 40% 可見度」嚴重誇大</strong>，目前學術界幾乎沒有任何強實證證明 GEO 能真正改善有機檢索或帶來長期商業轉換；最穩健的槓桿只有「主題相關性」與「上下文位置」。</td></tr></tbody>
+  </table></div>
+</section>
+<section class="card block compare-block" id="t-risk" style="--theme:var(--theme-risk)">
+  <div class="block-head"><div><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><p class="theme-line">當可見度可以被污染、被買賣，平台和信任會怎樣。</p></div>
+  <svg class="compare-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M87.5,55.9 C86.0,64.7 76.8,75.7 68.8,79.6 C60.8,83.4 48.9,81.7 39.7,79.1 C30.4,76.5 17.7,72.0 13.1,63.8 C8.6,55.7 7.0,38.5 12.4,30.2 C17.7,21.9 34.6,14.8 45.4,14.3 C56.2,13.8 70.3,20.0 77.3,26.9 C84.3,33.9 88.9,47.1 87.5,55.9 Z" fill="#FFB5C1"/><ellipse cx="34.7" cy="47.2" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="54.6" cy="47.2" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+  <div class="table-scroll"><table class="compare">
+    <thead><tr><th scope="col">論文</th><th scope="col">主題</th><th scope="col">出處</th><th scope="col">一句話總結</th></tr></thead>
+    <tbody><tr><td><a href="papers/zhuhussain2026.html">Zhu &amp; Hussain (2026)</a></td><td>商業投毒與 AI 搜尋安全</td><td>Electronic Commerce Research and Applications</td><td>這是一篇<strong>系統端安全審計</strong>研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶偏。結果發現<strong>只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌</strong>，而 Constitutional AI 的防禦力遠優於 RLHF。</td></tr><tr><td><a href="papers/hu2026.html">Hu et al. (2026)</a></td><td>GEM-Bench：生成式引擎行銷廣告植入評測基準</td><td>Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2</td><td>這篇論文建立了全球首個針對「生成式引擎行銷（GEM）廣告植入回答」的評測基準 <strong>GEM-Bench</strong>，並提出多 Agent 框架 <strong>Ad-LLM</strong>。結果發現：把廣告硬塞進 System Prompt（Ad-Chat）雖然點擊率略高，但會嚴重破壞事實正確性與消費者信任；而先生成再平滑重寫廣告的 Ad-LLM，能在維持高點擊率的同時大幅提升信任與滿意度。</td></tr><tr><td><a href="papers/gu2026.html">Gu et al. (2026)</a></td><td>數位平台上的評論操縱與過濾</td><td>Information Systems Research (INFORMS)</td><td>在平台過濾機制生效前，不論是「5 星正向操縱評論」或「1 星負向惡意操縱評論」，一週內都會顯著提升 App 銷售排名（5 星 +11.1%、1 星 +9.2%）。負評反而推升排名，原因是消費者能識破假負評並「打折」處理，只剩「數量／曝光效應」；平台過濾最終能修正扭曲，但完整修復需長達 <strong>6 個月</strong>。</td></tr></tbody>
+  </table></div>
+</section>
+<section class="card block compare-block" id="t-consumer" style="--theme:var(--theme-consumer)">
+  <div class="block-head"><div><span class="chip" style="--chip:var(--theme-consumer)">消費者反應</span><p class="theme-line">消費者怎麼看待、信任、評價 AI 產出與推薦。</p></div>
+  <svg class="compare-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M92.3,59.7 C90.9,69.2 79.4,83.2 69.8,87.1 C60.2,91.1 45.0,87.6 34.8,83.4 C24.6,79.2 11.7,71.0 8.6,61.9 C5.5,52.8 9.7,36.1 16.4,28.9 C23.2,21.6 38.6,18.0 48.9,18.2 C59.2,18.4 70.9,23.2 78.1,30.1 C85.3,37.0 93.7,50.2 92.3,59.7 Z" fill="#FFE59A"/><ellipse cx="43.7" cy="44.4" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.8" cy="44.4" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+  <div class="table-scroll"><table class="compare">
+    <thead><tr><th scope="col">論文</th><th scope="col">主題</th><th scope="col">出處</th><th scope="col">一句話總結</th></tr></thead>
+    <tbody><tr><td><a href="papers/changpark2026.html">Chang &amp; Park (2026)</a></td><td>生成式 AI 購物代理人對顧客旅程與購買決策之影響</td><td>Journal of Marketing Management</td><td>這篇<strong>直接測量消費者的心理反應</strong>。用「行為推理理論」和「信任轉移理論」證明：消費者對生成式 AI 購物代理人（GAISA）的採行，走的是理性推理路徑而非直覺捷徑；「情境適切性」是最強的採行動機，「感知複雜性」是最大阻力；信任會沿著 <strong>GAISA → 推薦商品 → 購買意願</strong> 這條鏈一路傳遞下去。</td></tr><tr><td><a href="papers/rix2025.html">Rix et al. (2025)</a></td><td>演算法折價：消費者如何評價人類創作 vs. 演算法創作的數位產品</td><td>Journal of Management Information Systems</td><td>消費者對 GenAI 創作的數位產品存在顯著的「<strong>演算法折價（Algorithm Discount）</strong>」：在單篇付費新聞情境中，標示為「Robo-journalist」會使邊際支付意願（MWTP）平均下降 <strong>78.24 美分</strong>（範圍 48¢–108¢）。折價由消費者的心理信念（人類創作蘊含的愛與品質）與產品訊號（內容範式、資訊透明度）共同驅動；主觀評論文章與附帶資料來源的文章折價最劇烈。</td></tr><tr><td><a href="papers/sikhondze2025.html">Sikhondze et al. (2025)</a></td><td>消費者願意為生成式 AI 產品付費嗎？揭露效應與心理價值的中介角色</td><td>Journal of Management Information Systems</td><td>消費者對生成式 AI 產品（GAIP）的支付意願（WTP）並非盲目排斥，而是取決於「<strong>產品類型</strong>」與「<strong>心理價值</strong>」的中介機制。在高創意型產品（如壁畫）中，揭露 GenAI 創作會顯著降低心理價值與 WTP（降幅達 25.8%）；在功能型產品（如便條紙）中，揭露 AI 或人類身份均無顯著影響；在混合型產品（如印花 T 恤）中，揭露人類創作反而能顯著提升心理價值。平台的 AI 揭露政策「不可一刀切」，需依產品特性採取彈性策略。</td></tr><tr><td><a href="papers/zhang2027.html">Zhang et al. (2027)</a></td><td>數位中介如何塑造實體隱蔽消費空間的光顧行為</td><td>Journal of Retailing and Consumer Services</td><td>傳統零售理論假設消費者偏好臨街可見、易達的店面，但本研究發現：隨著大眾點評、社交媒體、地圖導航等<strong>數位中介</strong>普及，越來越多位於非臨街、高樓層或地下室的「<strong>隱蔽消費空間（Hidden Consumption Spaces, HCS）</strong>」靠數位平台的事前篩選與驗證打破了地點劣勢，吸引穩定客流——但實體隱蔽度仍形成一條清晰的「<strong>隱蔽度梯度</strong>」，數位中介只是局部補償，而不是徹底抹平空間距離。</td></tr><tr><td><a href="papers/vu2026.html">Vu et al. (2026)</a></td><td>電商 AI 中的信任與個人化隱私悖論：消費者路徑框架</td><td>Journal of Retailing and Consumer Services</td><td>訪談 31 位美國消費者後發現，人對電商 AI 的信任不是「信或不信」，而是邊用邊調整的「信任校準」。作者歸納出四個心理機制，再組成 UCCG 四條路徑：效用、控制、溝通、治理導向，每條路徑需要不同的透明度與控制設計。</td></tr></tbody>
+  </table></div>
+</section>
+<section class="card block compare-block" id="t-platform" style="--theme:var(--theme-platform)">
+  <div class="block-head"><div><span class="chip" style="--chip:var(--theme-platform)">平台生態</span><p class="theme-line">生成式 AI 如何改變平台與使用者的貢獻行為。</p></div>
+  <svg class="compare-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M79.8,77.5 C72.8,84.7 56.4,91.2 46.8,89.8 C37.3,88.4 28.0,77.3 22.4,69.2 C16.8,61.2 11.3,50.3 13.4,41.6 C15.6,32.9 25.7,20.8 35.2,17.1 C44.7,13.4 61.6,14.5 70.5,19.4 C79.4,24.4 87.1,37.0 88.6,46.7 C90.2,56.4 86.8,70.3 79.8,77.5 Z" fill="#B7E1D1"/><ellipse cx="39.7" cy="55.8" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="57.2" cy="55.8" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+  <div class="table-scroll"><table class="compare">
+    <thead><tr><th scope="col">論文</th><th scope="col">主題</th><th scope="col">出處</th><th scope="col">一句話總結</th></tr></thead>
+    <tbody><tr><td><a href="papers/jmis2025.html">Wessel et al. (2025)</a></td><td>生成式 AI 對數位平台的轉型價值</td><td>Journal of Management Information Systems</td><td>這是資訊系統頂級期刊 JMIS 的特刊總論，提出整合工程、經濟與組織三重視角的概念框架，指出生成式 AI（GenAI）透過<strong>智慧自動化</strong>、<strong>民主化</strong>、<strong>超個人化</strong>、<strong>協同創新</strong>四大轉型機制，把平台的邊界資源從被動介面升級為「主動智慧仲介者」，並重塑平台擁有者、補完者、使用者與社會之間的價值創造與治理動態。</td></tr><tr><td><a href="papers/shanqiu2026.html">Shan &amp; Qiu (2026)</a></td><td>生成式 AI 對用戶自願知識貢獻的影響：Stack Overflow 自然實驗證據</td><td>Information Systems Research (INFORMS)</td><td>採用生成式 AI（ChatGPT）能顯著提升問答平台上用戶自願知識貢獻的「數量」與「品質」：使用 ChatGPT 使用戶每日回答數量顯著增加 <strong>16.77%</strong>，回答長度平均減少 <strong>22.64 個字</strong>，可讀性提升（理解所需教育年數減少 <strong>2.165 年</strong>）。「累積使用量」會透過「學習機制」強化此正向影響，但「短時間使用強度」會因「認知負擔」而減弱對回答數量的提升效果。</td></tr></tbody>
+  </table></div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="index.html">文獻</a><a href="compare.html">對照表</a><a href="concepts/index.html">概念</a><a href="about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

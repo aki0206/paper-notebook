@@ -1,0 +1,12 @@
+# 本機路徑
+local.config.json
+
+# 私人資料不進 repo
+*.pdf
+*.sqlite
+*_精讀筆記.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
