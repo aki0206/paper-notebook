@@ -22,6 +22,14 @@ Zotero（私人） → Obsidian 精讀筆記（私人） → content/（公開�
 
 AI 會依照 `CLAUDE.md` 第 4 節完成找論文、寫筆記、更新清單、建置與檢查。
 
+一次整理整個 Zotero 收藏夾：
+
+```
+/add-collection GEO consumer
+```
+
+AI 會先列出收藏夾裡還沒整理的論文讓你確認，再一篇一篇完成。
+
 ## 手動執行
 
 需要 Python 3.10 以上：
@@ -30,6 +38,7 @@ AI 會依照 `CLAUDE.md` 第 4 節完成找論文、寫筆記、更新清單、�
 pip install -r requirements.txt
 cp local.config.example.json local.config.json   # 填入 Vault 與 Zotero 路徑
 python scripts/find_paper.py "關鍵字"               # 查 Zotero
+python scripts/find_paper.py --collection "名稱" --missing   # 收藏夾裡還沒整理的論文
 python scripts/sync_notes.py                        # Vault → content/papers/
 python scripts/build.py                             # content/ → docs/，含隱私與連結檢查
 python -m http.server 8765 --directory docs         # 本機預覽

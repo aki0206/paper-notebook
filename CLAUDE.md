@@ -44,7 +44,8 @@ docs/*.html（GitHub Pages 發布的網站）
 | `assets/style.css` | 全站樣式，顏色只定義在這裡 | 可以 |
 | `scripts/` | 查詢、同步、建置工具 | 可以 |
 | `docs/` | 建置結果 | 不可以，由 `build.py` 產生 |
-| `.claude/commands/add-paper.md` | `/add-paper` 指令 | 流程改變時才改 |
+| `.claude/commands/add-paper.md` | `/add-paper` 指令，新增一篇 | 流程改變時才改 |
+| `.claude/commands/add-collection.md` | `/add-collection` 指令，從 Zotero 收藏夾批次新增 | 流程改變時才改 |
 | `local.config.json` | 本機 Vault 與 Zotero 路徑，不進 repo | 可以 |
 
 ## 4. 新增一篇論文的流程
@@ -64,6 +65,17 @@ docs/*.html（GitHub Pages 發布的網站）
 5. **同步與建置：** 依序執行 `python scripts/sync_notes.py`、`python scripts/build.py`。
 6. **看結果：** 檢查首頁卡片、單篇頁面和文獻對照表都有出現新論文。
 7. **回報：** 告訴使用者新增了什麼，以及哪些資訊待確認。
+
+### 一次新增多篇
+
+使用者列出多篇論文，或執行 `/add-collection 收藏夾名稱` 時：
+
+- **先列清單再動手：** 用 `find_paper.py --collection "名稱" --missing` 找出還沒整理的論文，列出標題、年份、有沒有 PDF 與建議主題，等使用者確認。
+- **沒有 PDF 就跳過：** 只有網頁紀錄的項目讀不到全文，列出來告訴使用者，不要只憑摘要寫筆記。
+- **一篇一篇做：** 讀完一篇、寫完筆記、加入 `catalog.json`，再讀下一篇，不要同時讀好幾份 PDF。
+- **最後才建置：** 全部寫完後只執行一次 `sync_notes.py` 與 `build.py`。
+- **每批最多 5 篇：** 超過時先完成前 5 篇並回報，請使用者開新對話繼續，避免對話太長影響後面的筆記品質。
+- **不可平行執行：** 多個對話同時新增論文會互相覆蓋 `catalog.json`。
 
 ## 5. 精讀筆記格式
 
