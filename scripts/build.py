@@ -138,6 +138,11 @@ def load_dir(path: Path) -> list[dict]:
 
 # ---------- 版型 ----------
 
+def asset_version(name: str) -> str:
+    """依檔案內容產生版本號；內容一改網址就變，瀏覽器不會用到舊快取。"""
+    return hashlib.md5((ROOT / "assets" / name).read_bytes()).hexdigest()[:8]
+
+
 def page(catalog: dict, *, path: str, title: str, content: str, description: str = "",
          body_class: str = "", math_on: bool = False) -> None:
     root = "../" * path.count("/")
@@ -154,6 +159,7 @@ def page(catalog: dict, *, path: str, title: str, content: str, description: str
         "root": root, "theme_css": theme_css, "head_extra": KATEX if math_on else "",
         "body_class": body_class, "site_title": esc(site["title"]), "nav": nav, "foot_nav": foot_nav,
         "repo": site["repo"], "logo": LOGO, "content": content,
+        "css_v": asset_version("style.css"), "js_v": asset_version("app.js"),
         "foot_blob": blob_svg("footer", "#FFB5C1", cls="foot-blob"),
     }.items():
         out = out.replace("{{" + key + "}}", value)
@@ -410,7 +416,7 @@ def check(catalog, papers, concepts) -> list[str]:
         for href in re.findall(r'href="([^"#]+)', f.read_text(encoding="utf-8")):
             if re.match(r"^(https?:|mailto:)", href):
                 continue
-            if not (f.parent / unquote(href)).resolve().exists():
+            if not (f.parent / unquote(href.split("?")[0])).resolve().exists():
                 errors.append(f"連結：{f.relative_to(ROOT)} → {href} 不存在")
     ids = {p["id"] for p in papers}
     for c in concepts:
