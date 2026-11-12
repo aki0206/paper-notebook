@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allouah et al. (2026)｜文獻手帳</title>
+<meta name="description" content="作者讓 Claude、GPT、Gemini 在模擬商城替人買東西，發現不同模型選出的「市占」差很多，而且都偏好第一排；「贊助」標籤讓被選機率從 10% 降到 8%–9%，「平台推薦」標籤則拉高到 20%–43%。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css?v=1008c62e">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-agentic:#B7E1D1;--theme-platform:#B7E1D1;}</style>
+
+</head>
+<body class="paper-page">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:var(--theme-agentic)">
+  <header class="card paper-head">
+    <a class="back" href="../index.html#papers">← 回到文獻卡片</a>
+    <div class="head-chips"><span class="chip" style="--chip:var(--theme-agentic)">代理式商務</span><span class="chip chip-plain">2026</span></div>
+    <p class="paper-cite-lg">Allouah et al. (2026)</p>
+    <h1>你的 AI 代理在買什麼？代理式電商中的選擇偏誤與模型依賴</h1>
+    <p class="orig-title" lang="en">What Is Your AI Agent Buying? Evaluation, Biases, Model Dependence, &amp; Emerging Implications of Agentic E-Commerce</p>
+    <dl class="biblio">
+      <div><dt>作者</dt><dd>Allouah, Besbes, Figueroa, Kanoria, Kumar</dd></div>
+      <div><dt>出處</dt><dd>Proceedings of the ACM Web Conference 2026</dd></div>
+      <div><dt>DOI</dt><dd><a href="https://doi.org/10.1145/3774904.3792943">10.1145/3774904.3792943</a></dd></div>
+    </dl>
+    <ul class="tags"><li>#AgenticCommerce</li><li>#AIShoppingAgents</li><li>#PositionBias</li><li>#SponsoredAds</li><li>#PlatformDesign</li><li>#ConditionalLogit</li></ul>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" role="img" aria-label="Allouah et al. (2026) 的角色"><path d="M73.2,71.1 C65.5,77.6 57.7,83.4 48.0,84.0 C38.3,84.6 21.3,81.8 15.0,74.7 C8.8,67.7 6.7,50.2 10.3,41.4 C13.9,32.7 26.8,25.9 36.7,22.3 C46.5,18.7 59.9,16.0 69.4,19.8 C79.0,23.6 93.5,36.6 94.1,45.2 C94.7,53.7 80.9,64.7 73.2,71.1 Z" fill="#B7E1D1"/><ellipse cx="38.0" cy="52.0" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="53.8" cy="52.0" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+
+<aside class="card summary-card" aria-label="一句話總結">
+  <p class="eyebrow">ONE-LINE SUMMARY</p>
+  <p class="summary-text">作者讓 Claude、GPT、Gemini 在模擬商城替人買東西，發現不同模型選出的「市占」差很多，而且都偏好第一排；「贊助」標籤讓被選機率從 10% 降到 8%–9%，「平台推薦」標籤則拉高到 20%–43%。</p>
+</aside>
+
+<article class="card block paper-body" style="--theme:var(--theme-agentic)">
+  <nav class="toc" aria-label="本頁目錄"><a href="#s1">研究問題</a><a href="#s2">研究方法</a><a href="#s3">主要發現</a><a href="#s4">限制與未來方向</a></nav>
+  <div class="prose">
+<h2 id="s1">研究問題</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>AI 代理會買什麼、為什麼買？分成「市占長什麼樣」與「對各種屬性和平台槓桿怎麼反應」兩層。</p>
+</div>
+<h3>研究問題（Section 1, p. 8697）</h3>
+<ul>
+<li><strong>RQ1</strong>：當購買完全由 AI 代理中介時，各商品的市占率如何？不同 AI 代理之間差多少？</li>
+<li><strong>RQ2</strong>：AI 代理如何回應可觀察的商品屬性（價格、評分、評論數、文字）與平台槓桿（版位、促銷、贊助）？</li>
+</ul>
+<h3>研究目的</h3>
+<ol>
+<li>建立一個「經濟評估框架」，而不是有標準答案的排行榜：購物沒有唯一正確的商品，重點是量出代理的選擇傾向（Section 1, p. 8698）。</li>
+<li>用隨機化實驗取得因果估計，隔離出「選擇」這一步，不測整段購物流程的任務完成度。</li>
+<li>提出對平台、賣家、消費者與監管者的具體意涵。</li>
+</ol>
+<h2 id="s2">研究方法</h2>
+<h3>實驗環境：ACES（Agentic e-CommercE Simulator）</h3>
+<ul>
+<li><strong>組成</strong>（Section 2, p. 8698）：<ul>
+<li>不綁定廠商的瀏覽器代理：視覺語言模型（VLM）＋工具呼叫，以 LangChain 與 Selenium 實作。</li>
+<li>完全可控的模擬電商網站（mock-app），搜尋結果以 2×4 格子呈現 8 個商品。</li>
+</ul>
+</li>
+<li><strong>流程</strong>：開啟網站 → 截圖 → 用通用預設提示詞詢問模型 → 記錄選擇。沒有商品詳細頁，刻意不做深層瀏覽，以隔離「選擇」這一步。</li>
+<li><strong>商品</strong>：8 個品類（健身手錶、iPhone 16 Pro 手機殼、滑鼠墊、辦公檯燈、釘書機、衛生紙、牙膏、洗衣機），每類取 Amazon.com 上 8 個代表性商品。</li>
+<li><strong>開源</strong>：程式碼公開於 GitHub（mycustomai/ACES）。</li>
+</ul>
+<h3>實驗一：完全委託下的市占率</h3>
+<ul>
+<li>每個品類跑 <strong>1,000 次</strong>，只隨機排列商品位置，其他屬性維持 Amazon 原始資料（Section 3, p. 8698）。</li>
+<li>以各商品被選中的比例作為「完全委託世界」中的市占率代理指標。</li>
+<li>模型：Claude Sonnet 4、GPT-4.1、Gemini 2.5 Flash。</li>
+</ul>
+<h3>實驗二：隨機對照實驗估計選擇敏感度</h3>
+<ul>
+<li>每個品類產生 <strong>500 個情境</strong>，同時隨機化版位、三種標籤、價格、評分與評論數（Table 1, p. 8699）。</li>
+<li>擾動幅度刻意設在「足以影響選擇、但不改變整體商品樣貌」的範圍。</li>
+<li>估計方法：條件 Logit，跨品類合併估計，含商品固定效果。</li>
+<li>樣本：觀察值 25,802 / 25,066 / 25,215；選擇集 3,756 / 3,931 / 3,953；Pseudo R² 0.44 / 0.51 / 0.42（Claude / GPT / Gemini，Table 2）。</li>
+</ul>
+<h3>穩健性檢驗（Section 4, p. 8700）</h3>
+<ul>
+<li><strong>無介面（Headless）環境</strong>：改成純文字、排序過的 JSON 清單（無圖片），模擬代理透過 API 讀取商品目錄。</li>
+<li><strong>提示詞變體</strong>：「忽略位置」、「忽略位置並優先考慮價格」，在兩種介面都測試。</li>
+</ul>
+<h2 id="s3">主要發現</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>AI 代理不是中立的完美比價者：它們有明顯的版位偏誤、會懲罰廣告、相信平台推薦，而且每個模型的偏好都不一樣，同一組商品換個模型，市占就大幅改變。</p>
+</div>
+<h3>換一個模型，市占就不一樣</h3>
+<ul>
+<li>同一組健身手錶，Claude Sonnet 4 有 <strong>45%</strong> 選 Fitbit Inspire，GPT-4.1 與 Gemini 2.5 Flash 只有約 <strong>25%</strong>（Figure 1, p. 8698）。</li>
+<li>有些品類的選擇集中在少數商品，部分品牌從未被選中（例如釘書機中的 Amazon Basics 與 Arrow）。作者指出這可能造成市場集中，壓縮消費者原本分散的偏好，也讓品牌難以維持能見度（Section 3, p. 8698）。</li>
+</ul>
+<h3>版位很重要，但「哪裡最好」因模型而異</h3>
+<ul>
+<li>三個模型都明顯偏好第一排（Table 2）。</li>
+<li>欄位偏好卻各不相同：GPT-4.1 強烈偏好第 1 欄；Claude Sonnet 4 幾乎忽略第 1 欄、偏好中間兩欄；Gemini 2.5 Flash 偏向第 3、4 欄（Section 4, p. 8699）。所以不存在通用的「最佳版位」。</li>
+<li>以 Claude Sonnet 4 為例：一個在右下角只有 <strong>4.5%</strong> 被選機率的商品，移到第一排第 2 或第 3 欄，被選率增加 <strong>5 倍</strong>；移到左上角只有一半的效果（p. 8699）。</li>
+</ul>
+<h3>「贊助」被打折，「平台推薦」被當真</h3>
+<ul>
+<li>基準被選機率 10% 的商品，加上 Sponsored 標籤後降到 <strong>8.9% / 8.0% / 7.9%</strong>（Claude / GPT / Gemini）（p. 8699）。</li>
+<li>加上 Overall Pick 推薦標籤後升到 <strong>24.3% / 19.9% / 42.6%</strong>（p. 8699）。</li>
+<li>稀缺標籤效果微弱為負，或與零無顯著差異。</li>
+<li>因為標籤是隨機分配的，這些是因果效果，不是商品本身品質造成的假象。</li>
+</ul>
+<h3>對價格、評分、評論數的方向合理，但幅度差很多</h3>
+<ul>
+<li>三者都偏好便宜、高評分、評論多的商品，方向和理性購物者一致（p. 8699）。</li>
+<li>評分 +0.1 時，10% 基準機率升為 <strong>15.4% / 20.3% / 16.0%</strong>（Claude / GPT / Gemini）（p. 8699）。</li>
+<li>價格彈性約 <strong>−1.6 到 −2.2</strong>，和人類購物者在品牌／單品層級的價格彈性估計大致相近（p. 8700）。</li>
+</ul>
+<h3>換算成「可以多賣多少錢」</h3>
+<p>在不流失市占的前提下，賣家可以漲價的幅度（Section 4, p. 8700）：</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">改變</th>
+<th style="text-align: left;">Claude Sonnet 4</th>
+<th style="text-align: left;">GPT-4.1</th>
+<th style="text-align: left;">Gemini 2.5 Flash</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">從第二排移到第一排</td>
+<td style="text-align: left;">約可漲一倍</td>
+<td style="text-align: left;">約可漲一倍</td>
+<td style="text-align: left;">約 +17%</td>
+</tr>
+<tr>
+<td style="text-align: left;">獲得 Overall Pick</td>
+<td style="text-align: left;">+92%</td>
+<td style="text-align: left;">+65%</td>
+<td style="text-align: left;">+138%</td>
+</tr>
+<tr>
+<td style="text-align: left;">評分 +0.1</td>
+<td style="text-align: left;">約三分之一</td>
+<td style="text-align: left;">67%</td>
+<td style="text-align: left;">約四分之一</td>
+</tr>
+<tr>
+<td style="text-align: left;">評論數加倍</td>
+<td style="text-align: left;">+19%</td>
+<td style="text-align: left;">+37%</td>
+<td style="text-align: left;">+17%</td>
+</tr>
+</tbody>
+</table></div>
+<h3>換成 API 或改提示詞，偏誤仍在</h3>
+<ul>
+<li><strong>無介面環境</strong>：排序越前面的商品權重越大，各模型有自己的「峰值」位置（Claude 與 GPT 是第 1 名，Gemini 是第 3 名）；Overall Pick 加分、Sponsored 扣分依然存在。代表偏誤不是視覺造成的（p. 8700）。</li>
+<li><strong>提示詞</strong>：「忽略位置」幾乎無法消除版位效果；「忽略位置並優先考慮價格」會讓價格敏感度變高、推薦標籤影響變小，但仍殘留版位偏誤（p. 8700）。作者結論：要消除版位偏誤，可能需要設計層面的介入，光靠指令不夠。</li>
+</ul>
+<h3>賣家端代理可以搶市占（僅簡述）</h3>
+<ul>
+<li>作者提到另做了實驗：賣家端代理只要稍微修改商品描述、針對買方 AI 的偏好調整，就能取得可觀的市占增加；但因篇幅限制未列出細節（Section 5, p. 8700）。</li>
+</ul>
+<div class="callout callout-warning">
+<p class="callout-title">論文未提及</p>
+<p>短論文版沒有提供賣家端實驗的數據，也沒有和人類消費者做直接對照。</p>
+</div>
+<h2 id="s4">限制與未來方向</h2>
+<h3>研究限制</h3>
+<ul>
+<li><strong>簡化的購物流程</strong>：只有搜尋結果頁、沒有商品詳細頁，省略完整漏斗，只能視為選擇行為的一階近似（Section 2, p. 8698）。</li>
+<li><strong>只測三個模型</strong>：Claude Sonnet 4、GPT-4.1、Gemini 2.5 Flash，結果會隨模型版本改變。</li>
+<li><strong>商品與情境有限</strong>：8 個品類、每類 8 個商品，使用通用的預設提示詞。</li>
+<li><strong>沒有人類基準</strong>：作者承認是否應與人類行為對照是重要問題，但本研究先專注建立評估框架（Section 5, p. 8700）。</li>
+</ul>
+<h3>未來研究方向</h3>
+<ol>
+<li>與人類消費者基準做校準比較。</li>
+<li>賣家端代理如何針對買方代理最佳化，以及雙方代理互動的市場後果。</li>
+<li>設計層面的去偏誤介入，例如針對代理的排名與版面政策。</li>
+</ol>
+<div class="callout callout-warning">
+<p class="callout-title">論文未提及</p>
+<p>短論文版沒有獨立的「限制」章節，以上限制整理自內文的說明。</p>
+</div>
+  </div>
+</article>
+
+<section class="card block" aria-labelledby="rel-h">
+  <div class="block-head"><div><p class="eyebrow">READ NEXT</p><h2 id="rel-h">接著讀</h2></div></div>
+  <div class="paper-grid small"><a class="paper-card" href="../papers/chen2025.html" data-theme="engine" data-year="2025" data-search="chen et al. (2025) generative engine optimization: how to dominate ai search generative engine optimization: how to dominate ai search 這是一篇系統端審計研究：比較 ai 搜尋引擎（chatgpt、perplexity、gemini、claude）與 google 在「引用哪些來源」上的差異，發現 ai 搜尋壓倒性偏好第三方權威媒體（earned media），並據此提出 generative engine optimization（geo，生成引擎最佳化） 的實證架構。 geo ai搜尋 生成式ai 品牌可見度" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M75.7,69.1 C69.3,77.4 60.7,90.5 52.0,91.3 C43.2,92.1 29.1,81.3 23.0,73.8 C16.8,66.3 14.0,55.5 15.2,46.2 C16.4,37.0 22.3,21.9 30.2,18.3 C38.1,14.7 52.7,20.8 62.7,24.7 C72.6,28.6 87.9,34.4 90.1,41.8 C92.2,49.2 82.0,60.9 75.7,69.1 Z" fill="#A9D3FF"/><ellipse cx="40.8" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="59.6" cy="52.7" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Chen et al. (2025)</span>
+  <span class="paper-title">Generative Engine Optimization: How to Dominate AI Search</span>
+  <span class="paper-summary">這是一篇系統端審計研究：比較 AI 搜尋引擎（ChatGPT、Perplexity、Gemini、Claude）與 Goog…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/arshad2026.html" data-theme="engine" data-year="2026" data-search="arshad (2026) cited or invisible? a multilingual, multi-platform audit of brand citation in generative search 被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計 這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 ai 搜尋平台（perplexity、gemini、chatgpt、google ai overviews）中的引用率。結論很直接：決定品牌能不能被引用的是「平台」，不是「語言」——平台間差距最高達 10 倍，語言間差距幾乎不顯著。而且就算消費者明確搜尋「正品」，ai 搜尋還是常常推薦二手平台或複刻商家，原廠反而被「隱形」。 generativesearch brandcitation multiplatformaudit multilingualaudit geo" style="--theme:var(--theme-engine)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.4,61.5 C75.4,68.8 68.0,77.7 60.3,80.3 C52.7,82.9 41.4,81.1 32.4,77.1 C23.5,73.0 8.2,64.6 6.5,56.0 C4.8,47.5 14.3,31.9 22.3,25.9 C30.2,19.9 45.0,18.3 54.3,20.0 C63.7,21.7 74.2,29.2 78.2,36.1 C82.3,43.0 81.3,54.1 78.4,61.5 Z" fill="#A9D3FF"/><ellipse cx="47.6" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="61.9" cy="46.4" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Arshad (2026)</span>
+  <span class="paper-title">被引用還是隱形？生成式搜尋中品牌引用的跨語言、跨平台審計</span>
+  <span class="paper-summary">這是一篇跨平台、跨語言的外部審計研究，測試品牌在四大 AI 搜尋平台（Perplexity、Gemini、ChatGPT、G…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-engine)">引擎與可見度</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/zhuhussain2026.html" data-theme="risk" data-year="2026" data-search="zhu &amp; hussain (2026) commercial poisoning in ai search: economic incentives and vulnerability persistence in retrieval-augmented generation 商業投毒與 ai 搜尋安全 這是一篇系統端安全審計研究：在自建的 rag 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 ai 會不會被帶偏。結果發現只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌，而 constitutional ai 的防禦力遠優於 rlhf。 商業投毒 commercialpoisoning geo rag ai搜尋 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M80.8,62.3 C78.3,70.3 71.0,81.3 62.1,85.0 C53.1,88.7 35.1,89.5 27.2,84.6 C19.3,79.6 15.6,65.2 14.7,55.3 C13.7,45.4 14.6,32.2 21.3,25.0 C28.1,17.9 46.1,10.4 55.4,12.3 C64.7,14.3 72.9,28.4 77.1,36.7 C81.4,45.0 83.3,54.2 80.8,62.3 Z" fill="#FFB5C1"/><ellipse cx="42.8" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="57.2" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Zhu &amp; Hussain (2026)</span>
+  <span class="paper-title">商業投毒與 AI 搜尋安全</span>
+  <span class="paper-summary">這是一篇系統端安全審計研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/hu2026.html" data-theme="risk" data-year="2026" data-search="hu et al. (2026) gem-bench: a benchmark for ad-injected response generation within generative engine marketing gem-bench：生成式引擎行銷廣告植入評測基準 這篇論文建立了全球首個針對「生成式引擎行銷（gem）廣告植入回答」的評測基準 gem-bench，並提出多 agent 框架 ad-llm。結果發現：把廣告硬塞進 system prompt（ad-chat）雖然點擊率略高，但會嚴重破壞事實正確性與消費者信任；而先生成再平滑重寫廣告的 ad-llm，能在維持高點擊率的同時大幅提升信任與滿意度。 gem gembench 廣告植入 generativeenginemarketing llmasjudge 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M78.9,68.8 C74.9,76.4 63.2,87.6 54.3,88.5 C45.5,89.4 31.8,80.8 25.7,74.2 C19.7,67.5 17.9,57.8 18.2,48.6 C18.5,39.4 20.2,23.9 27.6,19.0 C35.0,14.0 54.3,14.9 62.7,18.9 C71.2,22.9 75.7,34.7 78.4,43.0 C81.0,51.3 82.9,61.2 78.9,68.8 Z" fill="#FFB5C1"/><ellipse cx="35.4" cy="48.0" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="53.4" cy="48.0" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Hu et al. (2026)</span>
+  <span class="paper-title">GEM-Bench：生成式引擎行銷廣告植入評測基準</span>
+  <span class="paper-summary">這篇論文建立了全球首個針對「生成式引擎行銷（GEM）廣告植入回答」的評測基準 GEM-Bench，並提出多 Agent 框架…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div>
+  <nav class="pager" aria-label="上一篇與下一篇"><a class="btn btn-ghost" href="shanqiu2026.html">← Shan &amp; Qiu (2026)</a><a class="btn btn-ghost" href="dong2026.html">Dong et al. (2026)<span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js?v=733079db" defer></script>
+</body>
+</html>

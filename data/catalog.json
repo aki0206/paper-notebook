@@ -43,6 +43,12 @@
       "color": "#FFE59A"
     },
     {
+      "id": "agentic",
+      "name": "代理式商務",
+      "description": "AI 代理替消費者搜尋、比較與下單時，市場和消費者會怎樣。",
+      "color": "#B7E1D1"
+    },
+    {
       "id": "platform",
       "name": "平台生態",
       "description": "生成式 AI 如何改變平台與使用者的貢獻行為。",
@@ -76,6 +82,11 @@
     { "id": "zhang2027", "note": "Zhang2027_隱蔽消費空間_精讀筆記.md", "zoteroId": 132, "theme": "consumer" },
     { "id": "vu2026", "note": "Vu2026_信任校準與隱私悖論_精讀筆記.md", "zoteroId": 135, "theme": "consumer" },
     { "id": "jmis2025", "note": "JMIS2025_GenAI平台轉型_精讀筆記.md", "zoteroId": 154, "theme": "platform" },
-    { "id": "shanqiu2026", "note": "ShanQiu2026_GenAI知識貢獻_精讀筆記.md", "zoteroId": 152, "theme": "platform" }
+    { "id": "shanqiu2026", "note": "ShanQiu2026_GenAI知識貢獻_精讀筆記.md", "zoteroId": 152, "theme": "platform" },
+    { "id": "allouah2026", "note": "Allouah2026_AI代理購物偏誤_精讀筆記.md", "zoteroId": 194, "theme": "agentic" },
+    { "id": "dong2026", "note": "Dong2026_代理式商務經濟學_精讀筆記.md", "zoteroId": 196, "theme": "agentic" },
+    { "id": "fan2026", "note": "Fan2026_代理式商務世界_精讀筆記.md", "zoteroId": 198, "theme": "agentic" },
+    { "id": "balaskas2026", "note": "Balaskas2026_代理式商務系統性回顧_精讀筆記.md", "zoteroId": 184, "theme": "agentic" },
+    { "id": "debellisjohar2020", "note": "deBellisJohar2020_自主購物系統採用障礙_精讀筆記.md", "zoteroId": 186, "theme": "agentic" }
   ]
 }

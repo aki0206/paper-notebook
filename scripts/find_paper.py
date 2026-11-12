@@ -34,6 +34,14 @@ def open_copy(zotero_dir: Path) -> sqlite3.Connection:
         sys.exit(f"找不到 Zotero 資料庫：{src}")
     tmp = Path(tempfile.gettempdir()) / "geo-notebook-zotero.sqlite"
     shutil.copyfile(src, tmp)  # Zotero 開著時原檔會被鎖住，所以讀副本
+    # Zotero 開著時，最近的變更還在 -wal 檔裡，沒寫回主檔；要一起複製才讀得到最新資料
+    wal = src.with_name(src.name + "-wal")
+    tmp_wal = tmp.with_name(tmp.name + "-wal")
+    tmp.with_name(tmp.name + "-shm").unlink(missing_ok=True)
+    if wal.exists():
+        shutil.copyfile(wal, tmp_wal)
+    else:
+        tmp_wal.unlink(missing_ok=True)
     return sqlite3.connect(tmp)
 
 

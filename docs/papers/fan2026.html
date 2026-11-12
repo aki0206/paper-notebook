@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fan et al. (2026)｜文獻手帳</title>
+<meta name="description" content="作者打造讓買方與賣方 AI 代理在同一市場交易的測試環境 ACWorld，測 10 個模型，200 題能力測驗平均 65.9%–85.6%；並發現只看最後交易結果會漏掉錯誤：11.5% 沒拿滿分的執行，最終狀態和滿分執行一模一樣。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&display=swap">
+<link rel="stylesheet" href="../assets/style.css?v=1008c62e">
+<style>:root{--theme-engine:#A9D3FF;--theme-risk:#FFB5C1;--theme-consumer:#FFE59A;--theme-agentic:#B7E1D1;--theme-platform:#B7E1D1;}</style>
+
+</head>
+<body class="paper-page">
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-bar">
+  <a class="brand card" href="../index.html" aria-label="文獻手帳 首頁">
+    <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+    <span class="brand-text"><span class="brand-name">文獻手帳</span><span class="brand-en">LITERATURE NOTEBOOK</span></span>
+  </a>
+  <nav class="site-nav card" aria-label="主選單">
+    <a href="../index.html">文獻</a>
+    <a href="../compare.html">對照表</a>
+    <a href="../concepts/index.html">概念</a>
+    <a href="../about.html">關於</a>
+  </nav>
+</header>
+<main class="page" id="main">
+
+<div class="bento paper-top" style="--theme:var(--theme-agentic)">
+  <header class="card paper-head">
+    <a class="back" href="../index.html#papers">← 回到文獻卡片</a>
+    <div class="head-chips"><span class="chip" style="--chip:var(--theme-agentic)">代理式商務</span><span class="chip chip-plain">2026</span></div>
+    <p class="paper-cite-lg">Fan et al. (2026)</p>
+    <h1>代理式商務世界：可稽核、可驗證的氛圍商務環境</h1>
+    <p class="orig-title" lang="en">Agentic Commerce World: An Auditable and Verifiable Environment for Vibe Commerce</p>
+    <dl class="biblio">
+      <div><dt>作者</dt><dd>Fan, Yang, Wang, Chen, Zhang, Wei, Li, McAuley, Zhang, Yu, Yu, Liu</dd></div>
+      <div><dt>出處</dt><dd>arXiv 預印本 (arXiv:2608.02441v1 [cs.AI])</dd></div>
+      <div><dt>DOI</dt><dd>（待補）</dd></div>
+    </dl>
+    <ul class="tags"><li>#AgenticCommerce</li><li>#VibeCommerce</li><li>#AgentBenchmark</li><li>#MultiAgent</li><li>#Negotiation</li><li>#Auditability</li></ul>
+  </header>
+  <div class="card paper-portrait"><svg class="portrait-blob" viewBox="0 0 100 100" role="img" aria-label="Fan et al. (2026) 的角色"><path d="M87.4,72.6 C82.9,80.1 64.8,85.9 55.0,86.0 C45.1,86.0 35.2,79.0 28.3,72.9 C21.3,66.7 13.6,57.8 13.4,48.9 C13.2,40.1 19.1,24.1 27.0,19.8 C34.8,15.5 51.1,19.5 60.3,23.0 C69.5,26.5 77.8,32.6 82.3,40.9 C86.9,49.1 92.0,65.1 87.4,72.6 Z" fill="#B7E1D1"/><ellipse cx="39.5" cy="51.6" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="56.7" cy="51.6" rx="2.6" ry="3.6" fill="#111111"/></svg></div>
+</div>
+
+<aside class="card summary-card" aria-label="一句話總結">
+  <p class="eyebrow">ONE-LINE SUMMARY</p>
+  <p class="summary-text">作者打造讓買方與賣方 AI 代理在同一市場交易的測試環境 ACWorld，測 10 個模型，200 題能力測驗平均 65.9%–85.6%；並發現只看最後交易結果會漏掉錯誤：11.5% 沒拿滿分的執行，最終狀態和滿分執行一模一樣。</p>
+</aside>
+
+<article class="card block paper-body" style="--theme:var(--theme-agentic)">
+  <nav class="toc" aria-label="本頁目錄"><a href="#s1">研究問題</a><a href="#s2">研究方法</a><a href="#s3">主要發現</a><a href="#s4">限制與未來方向</a></nav>
+  <div class="prose">
+<h2 id="s1">研究問題</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>怎樣才能在同一個市場裡，公平、可重現地評估買賣雙方 AI 代理的交易能力，並追查每一個錯誤出在哪一步？</p>
+</div>
+<h3>研究問題</h3>
+<div class="callout callout-warning">
+<p class="callout-title">論文未提及</p>
+<p>論文沒有以 RQ 形式列出研究問題，以下依貢獻整理。</p>
+</div>
+<h3>研究目的（Section 1, p. 2）</h3>
+<ol>
+<li><strong>提出 Vibe Commerce Protocol（VCP）</strong>：記錄每個動作是哪個買方或賣方提出，並把「做決定」和「平台授權」「實際改變交易狀態」分開。</li>
+<li><strong>建立 ACWorld 環境</strong>：讓獨立控制的買賣雙方代理在一個持續存在的市場交易，交易紀錄可以重建狀態、重新評分。</li>
+<li><strong>建立 ACWorld Benchmark</strong>：用同一組 10 個模型，測試能力廣度與大型商品目錄下的執行能力。</li>
+</ol>
+<h2 id="s2">研究方法</h2>
+<h3>環境架構（Section 3, pp. 3–5）</h3>
+<ul>
+<li><strong>四個元件</strong>：買方代理、賣方代理、Commerce Intelligence Platform（檢查每個請求是否符合市場規則）、World（保存已接受的交易）。</li>
+<li><strong>代理技能</strong>：買方 11 種、賣方 25 種技能說明；共用 55 個商務工具與 18 個唯讀查詢（Table 3, p. 7）。</li>
+<li><strong>交易紀錄</strong>：每個決策都存成「行動者、決策、驗證結果、執行證據、狀態變化」的連結紀錄（Equation 2, p. 4）。</li>
+</ul>
+<h3>兩條評測軌道（Table 2, p. 5）</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">軌道</th>
+<th style="text-align: left;">商品規模</th>
+<th style="text-align: left;">任務數</th>
+<th style="text-align: left;">涵蓋範圍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">能力涵蓋</td>
+<td style="text-align: left;">1,082 筆公開商品快照</td>
+<td style="text-align: left;">200（買方 116、賣方 84）</td>
+<td style="text-align: left;">10 個任務家族、80 種能力</td>
+</tr>
+<tr>
+<td style="text-align: left;">大型目錄</td>
+<td style="text-align: left;">785,022 筆可交易商品</td>
+<td style="text-align: left;">60（買方 45、賣方 15）</td>
+<td style="text-align: left;">4 個任務家族、18 種能力</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>10 個任務家族</strong>：探索、事實佐證、偏好、議價、多品項、庫存、交易週期、治理、對抗、時機（Figure 5, p. 7）。</li>
+<li><strong>任務建構</strong>（Section 4.3, pp. 5–6）：先定義商業能力，再組成可執行案例；由作者團隊與業界人士審查合理性。只有參考策略能完成、且刻意改錯的版本會失分的案例才納入。</li>
+<li><strong>涵蓋檢查</strong>：80 種能力中，59 種對應到 ACP、UCP 或 AP2 的機制，另外 21 種是研究延伸（p. 6）。</li>
+<li><strong>權重穩健性</strong>：674 個檢查項目改成等權重，模型平均最多只變動 1.8 個百分點，排名不變（p. 7）。</li>
+</ul>
+<h3>實驗設定（Section 5.1, p. 8）</h3>
+<ul>
+<li><strong>模型</strong>：Claude Sonnet 5、DeepSeek-V4-Pro、Gemini 3.5 Flash、Gemini 3.6 Flash、GPT-5.6 Luna、GPT-5.6 Sol、GPT-5.6 Terra、Kimi K3、Mistral Medium 3.5、Qwen3.5 Plus。</li>
+<li>每個模型跑 200 + 60 個任務，共 2,000 與 600 次執行；交易對手行為固定；使用各家預設解碼設定，逾時 240 秒。</li>
+<li><strong>多代理市場研究</strong>：另外設一個 5 個買方 × 5 個賣方的固定市場。</li>
+</ul>
+<h2 id="s3">主要發現</h2>
+<div class="callout callout-success">
+<p class="callout-title">重點</p>
+<p>最好的模型在能力測驗約 86 分，但模型之間差距明顯；「找到並選對商品」是最弱的環節；只看最後有沒有成交會漏掉許多錯誤，需要記錄完整過程。</p>
+</div>
+<h3>能力涵蓋：最好的模型約 86 分</h3>
+<ul>
+<li>10 個模型平均分數 <strong>65.9%–85.6%</strong>；GPT-5.6 Sol 最高（85.6%），GPT-5.6 Luna 最低（65.9%）（Table 4, p. 8）。</li>
+<li>2,000 次執行中，<strong>1,139</strong> 次滿分、<strong>757</strong> 次部分得分、<strong>104</strong> 次零分（Section 5.2, p. 8）。</li>
+<li>依任務家族平均：庫存（93.3%）與交易週期（90.3%）最強；<strong>時機（40.3%）</strong> 與 <strong>探索（65.9%）</strong> 最弱（p. 8）。</li>
+</ul>
+<h3>大型目錄：搜尋與決策是瓶頸</h3>
+<ul>
+<li>10 個模型平均分數 <strong>56.10%–91.36%</strong>，Gemini 3.5 Flash 與 3.6 Flash 最高（Table 4, p. 8）。</li>
+<li>排名和能力涵蓋軌道不同，Mistral 最明顯，所以兩軌不合併計分（p. 9）。</li>
+<li>流程階段平均：驗證 <strong>94.17%</strong>、證據 <strong>86.75%</strong>、搜尋 <strong>76.11%</strong>、決策 <strong>73.67%</strong>。代表送出的動作大多格式正確，但模型在「從整個目錄找到並選中正確商品」上差異大（Section 5.3, p. 9）。</li>
+</ul>
+<h3>失分多半出在證據</h3>
+<ul>
+<li>861 次未滿分執行中，93.3% 可歸因到單一主要來源：證據 <strong>314</strong>、執行 <strong>208</strong>、選擇 <strong>159</strong>、權限 <strong>122</strong>，另有 58 次平手（Section 5.5.1, p. 10）。</li>
+<li>104 次零分中有 <strong>59</strong> 次源自選擇錯誤，很多完全失敗始於偏好或挑選錯誤。</li>
+<li>事實佐證任務主要錯在證據；多品項任務的未滿分全部是選擇錯誤（Figure 8, p. 11）。</li>
+</ul>
+<h3>交易成功不代表選對：案例</h3>
+<ul>
+<li>指令是「預算 $140 以內、保固至少 12 個月、在符合條件的商品中以品質優先」。兩個候選：A 商品 $91、品質 82；B 商品 $108、品質 96，保固都是 24 個月。Claude Sonnet 5 選了 A（Figure 9, p. 12）。</li>
+<li>交易被授權、成功結帳，但違反「品質優先」，總分 <strong>0.714</strong>。只看「有沒有買成」的評估者會漏掉這個錯（Section 5.5.2, p. 10）。</li>
+</ul>
+<h3>四項開發過程觀察</h3>
+<p>作者說明這些是開發中的觀察，不是經統計確認的結論（Section 5.6, p. 11）：</p>
+<ul>
+<li><strong>只看結果會藏住錯誤</strong>：861 次未滿分執行中，最終狀態和某個滿分執行完全相同的有 <strong>99 次（11.5%）</strong>；只看最後一個動作 54 次（6.3%）；看公開動作序列 45 次（5.2%）；看完整紀錄則為 0（Table 5, p. 12）。</li>
+<li><strong>未完成的執行仍有過程訊號</strong>：未滿分執行中 <strong>757 次（87.9%）</strong> 至少通過一個檢查，平均通過 3.49 項中的 1.88 項（p. 12）。</li>
+<li><strong>Gemini 較常在可推進時繼續嘗試</strong>：其他模型有時在不確定時提早拒絕或放棄（p. 12）。</li>
+<li><strong>安全檢查的兩種邊界</strong>：賣方說出買方的私人預算時，隱私防護在生效前擋下；買方選了有評論支持但未通過安全檢查的便宜商品時，交易被允許完成，但評分為零（p. 12）。</li>
+</ul>
+<h3>多代理市場</h3>
+<ul>
+<li>5 × 5 市場中成交 5 筆（含 1 筆因搶同一商品而改選備案），配置與參考答案一致，達全域最佳福利的 <strong>97.8%</strong>（Section 5.4, p. 10）。</li>
+<li>作者強調：只有一個市場、一個模型家族、一個隨機種子，無法比較策略。</li>
+</ul>
+<h2 id="s4">限制與未來方向</h2>
+<h3>研究限制（Section 7–8, p. 13）</h3>
+<ul>
+<li><strong>交易對手固定</strong>：每個任務只評估一個策略，對手行為是確定的；分數與 5 × 5 研究都無法衡量開放市場中的策略。</li>
+<li><strong>商品目錄不具代表性</strong>：未經獨立稽核，不能代表真實商務，也不反映即時庫存與需求。</li>
+<li><strong>重建只代表一致性</strong>：證明在宣告規則下前後一致，不代表語意正確；10 個完整性案例不是完整的安全證明。</li>
+<li><strong>研究環境</strong>：不是正式的付款或資安系統。</li>
+<li><strong>任務公開</strong>：公開任務可能被直接針對最佳化。</li>
+</ul>
+<h3>未來研究方向</h3>
+<ol>
+<li>將公開開發任務與不公開的保留測試任務搭配使用（p. 13）。</li>
+<li>驗證中間過程訊號是否真的能用於代理學習（Section 3.3, p. 5）。</li>
+<li>開放市場下的策略比較。</li>
+</ol>
+  </div>
+</article>
+
+<section class="card block" aria-labelledby="rel-h">
+  <div class="block-head"><div><p class="eyebrow">READ NEXT</p><h2 id="rel-h">接著讀</h2></div></div>
+  <div class="paper-grid small"><a class="paper-card" href="../papers/allouah2026.html" data-theme="agentic" data-year="2026" data-search="allouah et al. (2026) what is your ai agent buying? evaluation, biases, model dependence, &amp; emerging implications of agentic e-commerce 你的 ai 代理在買什麼？代理式電商中的選擇偏誤與模型依賴 作者讓 claude、gpt、gemini 在模擬商城替人買東西，發現不同模型選出的「市占」差很多，而且都偏好第一排；「贊助」標籤讓被選機率從 10% 降到 8%–9%，「平台推薦」標籤則拉高到 20%–43%。 agenticcommerce aishoppingagents positionbias sponsoredads platformdesign conditionallogit" style="--theme:var(--theme-agentic)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M73.2,71.1 C65.5,77.6 57.7,83.4 48.0,84.0 C38.3,84.6 21.3,81.8 15.0,74.7 C8.8,67.7 6.7,50.2 10.3,41.4 C13.9,32.7 26.8,25.9 36.7,22.3 C46.5,18.7 59.9,16.0 69.4,19.8 C79.0,23.6 93.5,36.6 94.1,45.2 C94.7,53.7 80.9,64.7 73.2,71.1 Z" fill="#B7E1D1"/><ellipse cx="38.0" cy="52.0" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="53.8" cy="52.0" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Allouah et al. (2026)</span>
+  <span class="paper-title">你的 AI 代理在買什麼？代理式電商中的選擇偏誤與模型依賴</span>
+  <span class="paper-summary">作者讓 Claude、GPT、Gemini 在模擬商城替人買東西，發現不同模型選出的「市占」差很多，而且都偏好第一排；「贊助…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-agentic)">代理式商務</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/dong2026.html" data-theme="agentic" data-year="2026" data-search="dong et al. (2026) from product search to preference articulation: the economics of agentic commerce 從找商品到說清楚偏好：代理式商務的經濟學 這篇用數學模型比較「自己逛」和「交給 ai 代理找」：偏好越複雜，自己逛終會放棄，ai 代理則一直有成交；但消費者得花力氣把偏好說清楚，所以平台覺得 ai 更賺錢時（範例複雜度 3.15），消費者要到 5.39 才願意用。 agenticcommerce agenticsearch preferencecomplexity preferencearticulation aifidelity consumersearch economicmodel" style="--theme:var(--theme-agentic)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M76.4,65.7 C71.3,74.2 64.9,86.9 56.4,88.8 C47.9,90.6 34.1,83.2 25.6,76.6 C17.1,70.1 4.2,57.3 5.3,49.3 C6.4,41.3 22.6,34.6 32.2,28.4 C41.8,22.3 53.8,10.7 62.9,12.3 C72.0,14.0 84.7,29.4 86.9,38.3 C89.2,47.2 81.5,57.3 76.4,65.7 Z" fill="#B7E1D1"/><ellipse cx="36.1" cy="53.5" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="52.5" cy="53.5" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Dong et al. (2026)</span>
+  <span class="paper-title">從找商品到說清楚偏好：代理式商務的經濟學</span>
+  <span class="paper-summary">這篇用數學模型比較「自己逛」和「交給 AI 代理找」：偏好越複雜，自己逛終會放棄，AI 代理則一直有成交；但消費者得花力氣把…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-agentic)">代理式商務</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/zhuhussain2026.html" data-theme="risk" data-year="2026" data-search="zhu &amp; hussain (2026) commercial poisoning in ai search: economic incentives and vulnerability persistence in retrieval-augmented generation 商業投毒與 ai 搜尋安全 這是一篇系統端安全審計研究：在自建的 rag 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 ai 會不會被帶偏。結果發現只要 1% 的污染就能讓 50%–100% 的回答偏向目標品牌，而 constitutional ai 的防禦力遠優於 rlhf。 商業投毒 commercialpoisoning geo rag ai搜尋 消費者信任" style="--theme:var(--theme-risk)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M80.8,62.3 C78.3,70.3 71.0,81.3 62.1,85.0 C53.1,88.7 35.1,89.5 27.2,84.6 C19.3,79.6 15.6,65.2 14.7,55.3 C13.7,45.4 14.6,32.2 21.3,25.0 C28.1,17.9 46.1,10.4 55.4,12.3 C64.7,14.3 72.9,28.4 77.1,36.7 C81.4,45.0 83.3,54.2 80.8,62.3 Z" fill="#FFB5C1"/><ellipse cx="42.8" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="57.2" cy="55.5" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Zhu &amp; Hussain (2026)</span>
+  <span class="paper-title">商業投毒與 AI 搜尋安全</span>
+  <span class="paper-summary">這是一篇系統端安全審計研究：在自建的 RAG 沙盒中，把「偽裝成評論或共識的商業內容」混進檢索資料庫，測量 AI 會不會被帶…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-risk)">操縱與商業化</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a>
+<a class="paper-card" href="../papers/vu2026.html" data-theme="consumer" data-year="2026" data-search="vu et al. (2026) navigating trust and the personalization-privacy paradox in ai-driven e-commerce: a consumer pathway framework 電商 ai 中的信任與個人化隱私悖論：消費者路徑框架 訪談 31 位美國消費者後發現，人對電商 ai 的信任不是「信或不信」，而是邊用邊調整的「信任校準」。作者歸納出四個心理機制，再組成 uccg 四條路徑：效用、控制、溝通、治理導向，每條路徑需要不同的透明度與控制設計。 trustcalibration personalizationprivacyparadox commitmenttrusttheory ecommerceai qualitativeresearch" style="--theme:var(--theme-consumer)">
+  <span class="paper-art"><svg class="blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M79.4,67.0 C74.8,73.8 64.4,79.0 55.3,80.8 C46.2,82.7 32.3,83.3 24.6,78.1 C16.9,72.9 9.0,59.5 9.2,49.9 C9.3,40.2 17.2,24.7 25.5,20.3 C33.8,15.8 49.4,20.1 59.0,23.3 C68.6,26.5 79.5,32.2 82.9,39.5 C86.3,46.7 84.0,60.1 79.4,67.0 Z" fill="#FFE59A"/><ellipse cx="43.5" cy="52.1" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.9" cy="52.1" rx="2.6" ry="3.6" fill="#111111"/></svg></span>
+  <span class="paper-cite">Vu et al. (2026)</span>
+  <span class="paper-title">電商 AI 中的信任與個人化隱私悖論：消費者路徑框架</span>
+  <span class="paper-summary">訪談 31 位美國消費者後發現，人對電商 AI 的信任不是「信或不信」，而是邊用邊調整的「信任校準」。作者歸納出四個心理機制…</span>
+  <span class="paper-foot"><span class="chip" style="--chip:var(--theme-consumer)">消費者反應</span><span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+</a></div>
+  <nav class="pager" aria-label="上一篇與下一篇"><a class="btn btn-ghost" href="dong2026.html">← Dong et al. (2026)</a><a class="btn btn-ghost" href="balaskas2026.html">Balaskas (2026)<span class="arrow" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></nav>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="foot-card">
+    <div class="foot-brand">
+      <svg class="logo" viewBox="0 0 100 100" aria-hidden="true"><path d="M88.3,55.0 C88.1,63.0 77.7,75.1 69.7,79.1 C61.7,83.2 49.2,82.1 40.4,79.5 C31.7,76.9 21.1,71.1 17.2,63.5 C13.2,55.9 12.2,41.4 16.8,33.9 C21.4,26.5 35.8,19.0 44.9,18.6 C54.0,18.2 63.9,25.3 71.2,31.4 C78.4,37.5 88.6,47.0 88.3,55.0 Z" fill="#111111"/><ellipse cx="42" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/><ellipse cx="58" cy="47" rx="4" ry="5.5" fill="#F7F3EF"/></svg>
+      <p class="brand-name">文獻手帳</p>
+      <p class="foot-note">內容整理自個人精讀筆記，書目資料以 Zotero 為準。論文版權屬原作者，引用前請閱讀原文。</p>
+    </div>
+    <nav class="foot-links" aria-label="頁尾連結">
+      <div><p class="eyebrow">READ</p><a href="../index.html">文獻</a><a href="../compare.html">對照表</a><a href="../concepts/index.html">概念</a><a href="../about.html">關於</a></div>
+      <div><p class="eyebrow">SOURCE</p><a href="https://github.com/aki0206/paper-notebook">GitHub</a><a href="https://github.com/aki0206/paper-notebook/blob/main/CLAUDE.md">CLAUDE.md 規則</a></div>
+    </nav>
+    <svg class="foot-blob" viewBox="0 0 100 100" aria-hidden="true"><path d="M81.5,55.4 C80.1,63.2 73.7,72.1 66.5,76.4 C59.4,80.8 46.7,84.0 38.6,81.6 C30.5,79.2 20.9,70.0 17.9,62.2 C14.9,54.4 15.8,41.6 20.5,34.8 C25.3,28.0 37.4,22.3 46.4,21.4 C55.4,20.5 68.9,23.8 74.7,29.4 C80.6,35.1 82.9,47.5 81.5,55.4 Z" fill="#FFB5C1"/><ellipse cx="38.9" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/><ellipse cx="58.2" cy="54.3" rx="2.6" ry="3.6" fill="#111111"/></svg>
+  </div>
+</footer>
+<script src="../assets/app.js?v=733079db" defer></script>
+</body>
+</html>
